@@ -88,15 +88,16 @@ button {
 .ed-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-areas: "content card";
   gap: 2rem;
   align-items: start;
   padding: 2rem 0;
 }
 
 .ed-content {
-  background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 8px;
+  grid-area: content;
 }
 
 /* Todo box-shadow */
@@ -110,10 +111,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
+  grid-area: card;
 }
 .ed-card-title {
+  font-size: 1.5rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   background-color: #d7d7d7;
   min-width: 100%;
 }
@@ -128,9 +131,15 @@ button {
   border-radius: 50%;
   margin-left: 5%;
 }
+.ed-card-name {
+  font-weight: 400;
+}
 .ed-card-quote {
   margin-bottom: 3rem;
   font-family: var(--header-font);
+  font-weight: 600;
+  color: #828282;
+  font-size: 1.2rem;
   margin-left: 5%;
   margin-top: 1rem;
   max-width: 90%;
@@ -153,7 +162,7 @@ button {
 }
 .ed-content-imgs img:first-child {
   grid-column: span 4;
-  height: 300px; 
+  height: 300px;
   object-fit: cover;
 }
 
@@ -168,6 +177,12 @@ button {
   .hero-section {
     padding-bottom: 40%;
   }
+  
+  /* ====== Responsive event details section ===== */
+  .ed-section {
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-areas: "card content";
+  }
 }
 
 @media (max-width: 767px) {
@@ -180,10 +195,13 @@ button {
     padding-bottom: 80%;
   }
 
-  /* responsive Event details */
-  @media (max-width: 767px) {
-    .ed-section {
-      grid-template-columns: 1fr;
-    }
+  /* ========== Responsive event details section ========= */
+  .ed-section {
+    /* display: flex;
+    flex-direction: column-reverse; */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card"
+      "content";
   }
 }
