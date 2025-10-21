@@ -42,33 +42,37 @@ body {
 
 /* hero-section et navbar*/
 
-.FAQ{
+.FAQ {
   margin-left: 30px;
 }
-.div-logo{
+
+.div-logo {
   display: flex;
   justify-content: center;
 }
+
 .header-first-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.btn-div{
+.btn-div {
   margin-right: 10px;
 }
-.btn-div button{
+
+.btn-div button {
   border-radius: 50px;
   border: none;
   padding: 10px 30px;
   background-color: #961F1F;
 }
 
-.btn-div button a{
+.btn-div button a {
   color: white;
   text-decoration: none;
 }
+
 .img-logo {
   width: 300px;
   height: 150px;
@@ -84,7 +88,7 @@ body {
   list-style: none;
 }
 
-.header-second-section ul li a{
+.header-second-section ul li a {
   text-decoration: none;
   color: white;
 }
@@ -108,8 +112,9 @@ body {
 }
 
 .header-wraper {
-  background-image: url("../assets/images/hero-section.png");
+  background-image: url("../assets/images/hero-section.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: cover;
@@ -144,15 +149,73 @@ body {
 
 /* section text*/
 
-.text-section{
+.text-section {
   display: flex;
   justify-content: center;
 }
-.div-text-section{
+
+.div-text-section {
   margin-top: 60px;
   width: 60%;
 }
-.div-text-section p{
-   text-align: center;
-   font-size: 11px;
+
+.div-text-section p {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* ========================================================================================= */
+
+/* events section*/
+
+.div-events {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+
+.div-events h2 {
+  font-family: 'playfair';
+  margin-left: 9%;
+}
+
+.div-events form {
+  display: flex;
+  gap: 45px;
+  margin-right: 9%;
+}
+
+.div-events form select {
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  background-color: #961F1F;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+/* Responsive mobile */
+
+@media (max-width:767px) {
+  .div-events {
+    flex-direction: column;
+  }
+
+  .div-events h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .div-events form {
+    margin-top: 23px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 0%;
+  }
+
+  .div-events form select {
+    gap: 15px;
+  }
 }
