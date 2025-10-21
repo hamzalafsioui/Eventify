@@ -165,14 +165,50 @@ button {
   height: 300px;
   object-fit: cover;
 }
-hr{
-  color: #BDBDBD;
+hr {
+  color: #bdbdbd;
   font-weight: 100;
 }
-.ed-card-price span{
+.ed-card-price span {
   font-weight: 600;
 }
 
+/* Interested events */
+.interested-title {
+  text-align: center;
+  font-family: var(--header-font);
+  max-width: 55%;
+  margin: 2rem auto;
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+.interested-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.interested-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.interested-card h5 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.interested-card p {
+  color: #828282;
+  font-weight: 500;
+}
+.interested-card a {
+  text-decoration: none;
+  color: white;
+  margin-left: 40%;
+  font-size: 0.9rem;
+}
 /*  Responsive  */
 
 @media (max-width: 1024px) {
@@ -189,6 +225,12 @@ hr{
   .ed-section {
     grid-template-columns: 1.5fr 2fr;
     grid-template-areas: "card content";
+  }
+
+  /* Interested events */
+  .interested-title {
+    margin: 2rem 0;
+    min-width: 700px;
   }
 }
 
@@ -210,5 +252,20 @@ hr{
     grid-template-areas:
       "card"
       "content";
+  }
+
+  /* Interested events */
+  .interested-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .interested-title {
+   text-align: center;
+    margin: 2rem auto;
+    font-size: 1.95rem;
+    min-width: 0 !important;
+    max-width: 100%;
   }
 }
