@@ -165,6 +165,13 @@ button {
   height: 300px;
   object-fit: cover;
 }
+hr{
+  color: #BDBDBD;
+  font-weight: 100;
+}
+.ed-card-price span{
+  font-weight: 600;
+}
 
 /*  Responsive  */
 
@@ -177,7 +184,7 @@ button {
   .hero-section {
     padding-bottom: 40%;
   }
-  
+
   /* ====== Responsive event details section ===== */
   .ed-section {
     grid-template-columns: 1.5fr 2fr;
