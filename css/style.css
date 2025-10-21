@@ -1,3 +1,15 @@
+
+:root{
+  --red-color: #961F1F;
+  --gray-color: #4F4F4F;
+  --main-font: lato;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--main-font);
   line-height: 1.6;
   color: #fff;         
   background-color: #000; 
@@ -17,4 +29,8 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+h1{
+font-family: 'lato-bold';
 }
