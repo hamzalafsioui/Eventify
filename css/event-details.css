@@ -1,0 +1,189 @@
+:root {
+  --red-color: #961f1f;
+  --gray-color: #4f4f4f;
+  --main-font: "lato";
+  --header-font: "Playfair", serif;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "playfair";
+  src: url("../assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  line-height: 1.6;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.977);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header section & hero */
+
+.header-hero-container {
+  height: 100vh;
+  background-image: url("../assets/images/ed-microphone.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.header-content {
+  font-family: var(--header-font);
+  font-size: 1.5rem;
+}
+
+.hero-section {
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.hs-title {
+  font-family: var(--header-font);
+  max-width: 55%;
+  margin: 2rem auto;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.btn-container {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* event-details-section */
+
+.ed-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+}
+
+.ed-content {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Todo box-shadow */
+.ed-card {
+  color: #4f4f4f;
+  background-color: #f8f8f8;
+  /* padding: 1rem; */
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.ed-card-title {
+  text-align: center;
+  font-weight: 700;
+  background-color: #d7d7d7;
+  min-width: 100%;
+}
+.ed-card-info {
+  display: flex;
+  margin-top: 2%;
+  gap: 1rem;
+}
+.ed-card img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+.ed-card-quote {
+  margin-bottom: 3rem;
+  font-family: var(--header-font);
+  margin-left: 5%;
+  margin-top: 1rem;
+  max-width: 90%;
+}
+.ed-card-dlp p {
+  margin: 0 0 1rem 5%;
+}
+
+.ed-content-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.ed-content-imgs img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.ed-content-imgs img:first-child {
+  grid-column: span 4;
+  height: 300px; 
+  object-fit: cover;
+}
+
+/*  Responsive  */
+
+@media (max-width: 1024px) {
+  .hs-title {
+    min-width: 100%;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .hero-section {
+    padding-bottom: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hs-title {
+    min-width: 100%;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .hero-section {
+    padding-bottom: 80%;
+  }
+
+  /* responsive Event details */
+  @media (max-width: 767px) {
+    .ed-section {
+      grid-template-columns: 1fr;
+    }
+  }
+}
