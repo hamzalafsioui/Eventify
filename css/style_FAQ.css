@@ -1,0 +1,206 @@
+:root {
+    --red-color: #961F1F;
+    --gray-color: #4F4F4F;
+    --main-font: 'lato';
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.977);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--main-font);
+}
+
+@media screen and (max-width:767px) {
+
+    /*--------------------------section 1 faq question-------------------------*/
+    .section_faq_question {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .section_faq_question .cards_faq {
+        display: grid;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 10%;
+    }
+
+    .section_faq_question .cards_faq .card {
+        background-color: #3C3939;
+        border-radius: 20px;
+        padding: 7%;
+    }
+
+    .section_faq_question .more_question {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        background-color: #EFEDE0;
+        color: black;
+        border-radius: 20px;
+        padding: 5%;
+
+    }
+
+    .section_faq_question .more_question a {
+        background-color: #53686A;
+        color: white;
+        padding: 3%;
+    }
+
+    /*--------------------section 2 search -------------------*/
+    .section_search_faq_question {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .section_search_faq_question .container_search {
+        width: 100%;
+        margin-bottom: 10%;
+
+    }
+
+    .section_search_faq_question .container_search input {
+        width: 75%;
+        padding: 3%;
+        padding-left: 25px;
+        background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+        background-size: 20px;
+        background-color: white;
+
+    }
+
+    .section_search_faq_question .container_search button {
+        width: 24%;
+        padding: 3%;
+        border-radius: 50px;
+    }
+
+    .section_search_faq_question .result_search {
+        width: 100%;
+    }
+
+    .section_search_faq_question .result_search .accordin {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section_search_faq_question .result_search .panel {
+        text-align: start;
+    }
+
+    /*--------------------- section carte google map-------------------*/
+    .section_faq_google_map {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section_faq_google_map h2 {
+        margin-bottom: 20px;
+
+    }
+
+    .section_faq_google_map .map-responsive {
+        width: 100%;
+    }
+
+    /*---------------------------section poser question-------------------*/
+    .section_faq_poser_question {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .section_faq_poser_question h2 {
+        margin-bottom: 20px;
+    }
+
+    .section_faq_poser_question .group_form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0% auto;
+    }
+
+    .section_faq_poser_question .group_form label {
+        text-align: start;
+    }
+
+    .section_faq_poser_question .group_form input,
+    textarea {
+        background-color: transparent;
+        border: 1.5px solid white;
+        border-radius: 50px;
+        padding: 10px;
+        text-align: start;
+    }
+
+    .section_faq_poser_question .group_form.checkbox{
+        width: 100%;
+        display: flex;
+        flex-direction:row ;
+    }
+    .section_faq_poser_question button{
+        width: 80%;
+        padding: 3%;
+        border-radius: 50px;
+        background-color: #3C3939;
+        color: white;
+    }
+    /*--------------------section brands--------------------------*/
+    .section_brands{
+        text-align: center;
+        padding: 3%;
+    }
+    .section_brands .container_Brands{
+        width: 90%;
+        margin: 0% auto;
+        display: grid;
+        grid-template-columns: 50px 50px;
+        justify-content: space-between;
+        row-gap: 20px;
+        grid-template-rows: 50px 50px 50px;
+    }
+    .section_brands .container_Brands .cercle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EFEDE0;
+        border-radius: 50%;
+    }
+    .section_brands .container_Brands .cercle img{
+        width: 90%;
+        background-color: #EFEDE0;
+        border-radius: 50%;
+    }
+    
+
+
+}
