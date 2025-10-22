@@ -2,7 +2,7 @@
 :root{
   --red-color: #961F1F;
   --gray-color: #4F4F4F;
-  --main-font: lato;
+  --main-font: 'lato';
   --background-color:rgba(0, 0, 0, 0.977);
 }
 
@@ -36,6 +36,7 @@ h1{
 font-family: var(--main-font);
 }
 
-/* @media (max-width:) {
-    
-} */
+/* Mobile First */
+
+
+
