@@ -51,6 +51,38 @@ header{
     height: 150px;
     padding-left: 10%;
 }
+.button-header {
+  display: flex;
+  gap: 15px;
+}
+.button-mobile{
+  display: none;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+}
+.menu-bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu.active .menu-bar:nth-child(1) {
+  transform: rotate(45deg) translateY(12px);
+}
+.menu.active .menu-bar:nth-child(2) {
+  opacity: 0;
+}
+.menu.active .menu-bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-12px);
+}
 .first-section-header .button-header{
     margin-right: 3%;
 }
@@ -251,9 +283,8 @@ header{
 }
 .vertical-line {
   position: relative;
-  top: 2%;
   width: 4px;
-  height: 45vh;
+  height: 100%;
   background-color: var(--red-color);
 }
 .sponsor-section{
@@ -284,17 +315,53 @@ header{
 }
 
 @media (max-width: 767px) {
-    header{
-        display: none;
+    .menu {
+      display: flex;
+      position: absolute;
+      top: 6%;
+      right: 5%;
+    }  
+    .first-section-header .button-header button,
+    .second-section-header,.faq-lien{
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
     }
-    .first-section-header,
-    .second-section-header{
-        flex-direction: column;
+    .second-section-header {
+      position: absolute; 
+      top: 70px; 
+      background-color: #000000f8; 
+      flex-direction: column; 
+      width: 100%; 
+      align-items: center; 
+      gap: 20px; 
+      padding: 20px 0;
+      display: none;
+    }
+    .second-section-header.active ,.active{
+      display: flex;
+    }
+    .button-mobile{
+      display: flex;
+    }
+    .button-mobile button{
+      background-color: var(--red-color);
+      width: 100px;
+      height: 5vh;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+    }
+    .active {
+      display: flex;
     }
     .first-section-header img{
-        width: 80px;
-        height: 70px;
-        margin-right: 90%;
+        width: 100px;
+        height: auto;
+        margin-top: 5%;
+        margin-right: 95%;
     }
     .hero-section{
         background-position: center;
@@ -306,13 +373,13 @@ header{
     .hero-section button{
         width: 154px;
         height: 38px;
-        margin-left: 35%;
+        margin-left: 30%;
     }
     .hero-section h1{
-        margin-left: 7%;
+        margin-left: 3%;
     }
     .hero-section h4{
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .hero-section h5{
         margin-left: 31%;
