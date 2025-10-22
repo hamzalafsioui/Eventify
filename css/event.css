@@ -40,7 +40,23 @@ body {
 
 /* ========================================================================================= */
 
-/* hero-section et navbar*/
+/* Hero-section et navbar*/
+/* Menu */
+.menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.menu-bar {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+}
 
 .FAQ {
   margin-left: 30px;
@@ -124,25 +140,46 @@ body {
 /* responsive mobile */
 
 @media (max-width:767px) {
-  .header-first-section {
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+  }
+
+  .btn-div {
+    display: none;
+  }
+  nav > ul{
+    display: none !important;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .FAQ {
     display: none;
   }
 
-  .header-first-section img {
+  .img-logo{
     display: flex;
+    padding-left: 0;
+    margin-top: 2px;
+    width: 60px;
+  height: auto;
   }
 
   .hero-section {
-    margin-top: 60%;
+    margin-top: 30%;
+  }
+  .active {
+    display: flex !important;
   }
 
   .text-hero-section {
     font-size: 10px;
   }
 
-  .header-second-section ul li {
-    font-size: 11px;
-  }
 }
 
 /* ========================================================================================= */
@@ -196,7 +233,7 @@ body {
 }
 
 /* Events cards*/
-.section-card{
+.section-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -205,11 +242,28 @@ body {
   padding-right: 10%;
 
 }
-.section-card {
 
+.section-card p {
+  color: #828282;
 }
-.section-card img{
+
+.section-card .read {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40%;
+}
+
+.section-card img {
   width: 450px;
+}
+
+/* Responsive tablette */
+
+@media (max-width:1023px) {
+  .section-card img {
+    width: 250px;
+  }
+
 }
 
 /* Responsive mobile */
@@ -217,6 +271,31 @@ body {
 @media (max-width:767px) {
   .div-events {
     flex-direction: column;
+  }
+
+  .section-card .card {
+    width: 250px;
+  }
+
+  .section-card {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+
+  .read {
+    margin-left: 0% !important;
+    text-align: center;
+  }
+
+  .card p {
+    text-align: start;
+  }
+
+  .card h3 {
+    text-align: start;
   }
 
   .div-events h2 {
