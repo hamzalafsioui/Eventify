@@ -1,0 +1,42 @@
+
+:root{
+  --red-color: #961F1F;
+  --gray-color: #4F4F4F;
+  --main-font: 'lato';
+  --background-color:rgba(0, 0, 0, 0.977);
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%; 
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--main-font);
+  line-height: 1.6;
+  color: #fff;         
+  background-color:var(--background-color); 
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1{
+font-family: var(--main-font);
+}
+
+/* Mobile First */
+
+
+
