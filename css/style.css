@@ -181,7 +181,6 @@ header{
   margin-left: 5%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto auto;
   justify-content: space-around;
   align-items: center;
   row-gap: 5%;
@@ -192,17 +191,97 @@ header{
   height: 40vh;
 }
 .cards-section .card h3{
-  margin: 3%;
+  margin: 2% 0;
   font-size: 18px;
   font-weight: bold;
+  color: #828282;
+  letter-spacing:6px;
 }
 .cards-section .card p{
+  color: var(--gray-color);
+  font-size: 15px;
   width: 320px;
+  line-height: 1.6;
 }
+.etoiles-section i{
+  color: #FFEA00;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.event-section a button{
+  width: 220px;
+  height: 65px;
+  color: white;
+  background-color: var(--red-color);
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 7%;
+  margin-left: 40%;
+}
+.comments-setion h2{
+  margin-top: 5%;
+  text-align: center;
+  color: white;
+  font-family: var(--title-font);
+  font-size: 70px;
+  font-style: italic;
+}
+.comments-card{
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr 4px 1fr ;
+  column-gap: 3%;
+}
+.comment-card{
+  width: auto;
+  height: auto;
+}
+.comment-card img{
+  margin-left: 30%;
+  margin-bottom: 10%;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
+.comments-card p{
+  font-size:20px ;
+  color: var(--gray-color);
+}
+.vertical-line {
+  position: relative;
+  top: 2%;
+  width: 4px;
+  height: 45vh;
+  background-color: var(--red-color);
+}
+.sponsor-section{
+  margin-top: 10%;
+}
+.sponsor-section h2{
+  margin-bottom: 4%;
+  font-size: 70px;
+  font-family: var(--title-font);
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+.image-section-sponsor{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  column-gap: 10%;
+  align-items: center;
+  justify-content: center;
 
-
-
-
+}
+.image-section-sponsor img{
+  width: 200px;
+  height: auto;
+}
+.image-pousser{
+  margin-left: 75%;
+}
 
 @media (max-width: 767px) {
     header{
@@ -260,4 +339,52 @@ header{
       width: 110%;
       margin-bottom: 7%;
     }
+    .cards-section{
+      grid-template-columns: 1fr;
+      margin-left: 10%;
+    }
+    .cards-section .card{
+      margin-bottom: -5%;
+    }
+    .card-move{
+      display: none;
+    }
+    .event-section h2{
+      text-align: center;
+    }
+    .cards-section .card img{
+      height: 30vh;
+    }
+  .event-section a button{
+        margin-top: 45%;
+        margin-left: 20%;
+  }
+  .comments-setion h2{
+    margin-bottom: 15%;
+    margin-top: 25%;
+    font-size: 40px;
+  }
+  .comments-card{
+    grid-template-columns: 1fr;
+  }
+  .comment-card{
+    margin: 7%;
+  }
+  .vertical-line{
+    display: none;
+  }
+  .image-section-sponsor{
+    grid-template-columns: 1fr;
+  }
+  .sponsor-section h2{
+      margin-bottom: -10%;
+    font-size: 50px;
+  }
+  .image-section-sponsor img{
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  .image-grand{
+    margin-bottom: -15%;
+  }
 }
