@@ -218,11 +218,14 @@ hr {
 }
 
 /* Interested events */
+.interested-section{
+  margin-bottom: 4rem;
+}
 .interested-title {
   text-align: center;
   font-family: var(--header-font);
   max-width: 55%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   font-size: 2.1rem;
   line-height: 1.2;
 }
@@ -233,6 +236,7 @@ hr {
 }
 .interested-card{
   border-radius: 20px;
+  padding-bottom: 1rem;
 
       box-shadow: rgb(150 31 31) 0px 2px 4px 0px, rgb(150 31 31) 0px 2px 16px 0px;
  
