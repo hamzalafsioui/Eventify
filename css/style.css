@@ -2,7 +2,7 @@
 :root{
   --red-color: #961F1F;
   --gray-color: #4F4F4F;
-  --main-font: lato;
+  --main-font: 'lato';
 }
 
 @font-face {
