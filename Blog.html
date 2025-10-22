@@ -35,13 +35,31 @@
 
         }
 
+        /* cartes */
+        .cartes {
+            margin-top: 5em;
+            margin-top: 5em;
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(22em, auto)); */
+            /* margin-left: 1em; */
+            justify-content: center;
+            row-gap: 2em;
+            /* grid-template-areas: "first-carte search"; */
+
+        }
+
+        /* .first-carte {
+            grid-area: first-carte;
+        } */
+
         /* search sidebar */
         .sidebar-search {
             width: 21.188em;
             height: 30.688em;
             border-radius: 0.5em;
             box-shadow: 2px 2px 7px rgb(102 102 102 / 27%);
-            margin: 0 auto;
+            /* grid-area: search; */
+
         }
 
         .input-search-sidebar {
@@ -100,15 +118,7 @@
             color: rgba(255, 255, 255, 0.31);
         }
 
-        /* cartes */
-        .cartes {
-            margin-top: 5em;
-            margin-top: 5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
+        /* cards */
         .one-cartes {
             width: 21.188em;
             height: 33.5em;
@@ -143,6 +153,8 @@
             border: none;
             background-color: #961F1F;
             color: #fff;
+            display: block;
+            margin: 0 auto;
         }
 
         /* hr => line */
@@ -194,35 +206,50 @@
         /* Tablette */
         @media (min-width:768px)and (max-width:1023px) {
             .sidebar-search {
-                float: right;
+                grid-area: search;
+            }
+
+            .first-carte {
+                grid-area: first-carte;
             }
 
             .cartes {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(27em, auto));
-                margin-left: 1em;
+                grid-template-areas: "first-carte search";
+                gap: 1em;
+                justify-content: space-evenly;
+
             }
 
             .carte-full-width {
                 width: 100%;
                 max-width: 600px;
-                grid-column: 1 / 3;
+                grid-column: 1 / 4;
                 margin: 0 auto;
             }
 
             .carte-full-width img {
                 width: 100%;
             }
-            .btn-all-blogs{
-                    grid-column: 1 / 4;
-                            margin: 0 auto;
+
+            .sponsor-blog-section {
+                width: 75%;
+
             }
-            .hr-blog{
-                margin: 0 auto;
+
+            .sponsor-blog-section img {
+                width: 6em;
+                margin: 1em;
+            }
+
+            .iframe-blog {
+                width: 80%;
             }
         }
 
-        @media (min-width:1024px)and (max-width:1279px) {}
+        @media (min-width:1023px)and (max-width:1279px) {
+          
+
+        }
 
         @media (min-width:1280px) {}
 
@@ -245,29 +272,30 @@
             <p>I should be incapable of drawing a single stroke at the present moment</p>
             <button>let’s begin</button>
         </section>
-        <!-- search sidebar  -->
-        <section class="sidebar-search">
-            <div class="input-search-sidebar">
-                <input type="text" placeholder="search">
-                <img src="./assets/images/search-icon.svg" alt="search-icon">
-            </div>
-            <div class="sidebar-categorie">
-                <h2>Catégories</h2>
-                <a href="#">Événements à venir</a>
-                <hr>
-                <a href="#">Événements passés</a>
-                <hr>
-                <a href="#">Conseils & Organisation</a>
-                <hr>
-                <a href="#">Tendances & Inspirations</a>
-                <hr>
-                <a href="#">Actualités</a>
-                <hr>
-            </div>
 
-        </section>
-        <section class="cartes">
-            <div class="one-cartes">
+        <section class="cartes container">
+            <!-- search sidebar  -->
+            <section class="sidebar-search">
+                <div class="input-search-sidebar">
+                    <input type="text" placeholder="search">
+                    <img src="./assets/images/search-icon.svg" alt="search-icon">
+                </div>
+                <div class="sidebar-categorie">
+                    <h2>Catégories</h2>
+                    <a href="#">Événements à venir</a>
+                    <hr>
+                    <a href="#">Événements passés</a>
+                    <hr>
+                    <a href="#">Conseils & Organisation</a>
+                    <hr>
+                    <a href="#">Tendances & Inspirations</a>
+                    <hr>
+                    <a href="#">Actualités</a>
+                    <hr>
+                </div>
+            </section>
+            <!-- LES CARTES -->
+            <div class="one-cartes first-carte">
                 <img src="./assets/images/img-carte-1.png" alt="">
                 <h2>lorem abcat</h2>
                 <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -307,13 +335,12 @@
                 <button>read more</button>
             </div>
 
-            <!-- Button All Blogs -->
-            <button class="btn-all-blogs">View all Blogs</button>
-
-            
-
         </section>
-        <hr class="hr-blog">
+        <!-- Button All Blogs -->
+        <button class="btn-all-blogs">View all Blogs</button>
+        <div class="div-hr-blog">
+            <hr class="hr-blog">
+        </div>
         <section class="sponsor-blog-section">
             <div>
                 <img src="./assets/images/Google.png" alt="google">
