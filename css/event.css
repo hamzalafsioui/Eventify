@@ -100,6 +100,10 @@ body {
   justify-content: center;
 }
 
+.h-top{
+  display: none;
+}
+
 .header-second-section ul li {
   list-style: none;
 }
@@ -111,7 +115,7 @@ body {
 
 .header-second-section ul {
   display: flex;
-  gap: 23px;
+  gap: 18px;
 }
 
 .hero-section {
@@ -150,9 +154,13 @@ body {
   .btn-div {
     display: none;
   }
+  .header-second-section{
+     background-color: black;
+  }
   nav > ul{
     display: none !important;
     flex-direction: column;
+    row-gap: 2px !important;
     width: 100%;
     text-align: center;
   }
@@ -160,7 +168,10 @@ body {
   .FAQ {
     display: none;
   }
-
+  .h-top{
+  display: flex;
+  justify-content: center;
+}
   .img-logo{
     display: flex;
     padding-left: 0;
@@ -170,7 +181,7 @@ body {
   }
 
   .hero-section {
-    margin-top: 30%;
+    margin-top: 25%;
   }
   .active {
     display: flex !important;
@@ -233,24 +244,32 @@ body {
 }
 
 /* Events cards*/
+
 .section-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-card p {
   color: #828282;
 }
 
-.section-card .read {
-  text-decoration: none;
+.read {
+  display: block;   
+  font-family: "lato";       
+  margin: 10px auto 0;     
+  text-align: center;     
+  font-size: 12px;
   color: #fff;
-  margin-left: 40%;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .section-card img {
@@ -259,16 +278,31 @@ body {
 
 /* Responsive tablette */
 
-@media (max-width:1023px) {
+@media (max-width:1024px) {
   .section-card img {
-    width: 250px;
+    width: 350px;
+  }
+  .card p {
+    text-align: start;
   }
 
+  .card h3 {
+    text-align: start;
+  }
+
+  .card {
+    width: 90%;                 
+    margin: 0 auto;             
+    text-align: center;         
+  }
 }
 
 /* Responsive mobile */
 
 @media (max-width:767px) {
+  .section-card img {
+    width: 250px;
+  }
   .div-events {
     flex-direction: column;
   }
@@ -285,18 +319,12 @@ body {
     padding-right: 0% !important;
   }
 
-  .read {
-    margin-left: 0% !important;
-    text-align: center;
+   .card {
+    width: 90%;                
+    margin: 0 auto;             
+    text-align: center;         
   }
 
-  .card p {
-    text-align: start;
-  }
-
-  .card h3 {
-    text-align: start;
-  }
 
   .div-events h2 {
     text-align: center;
@@ -314,4 +342,42 @@ body {
   .div-events form select {
     gap: 15px;
   }
+}
+/* ========================================================================================= */
+
+/* event future */
+
+.events-future{
+  margin-top: 8%;
+}
+
+.title-event-future{
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+.events-title h2{
+  font-family: 'playfair';
+  text-align: center;
+}
+.events-title hr{
+   width: 90% !important;          
+  margin: 20px auto;   
+  border: 1px solid #333;
+}
+
+@media (max-width:767px) {
+  .events-title hr{
+   display: none;
+}
+}
+
+/* ========================================================================================= */
+
+/* event future */
+
+.title-event-past{
+ text-align: center;
+ margin-top: 5%;
 }
