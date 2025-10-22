@@ -20,7 +20,7 @@
             margin-bottom: 4em;
         }
 
-        .hero-section-blog h1 {            
+        .hero-section-blog h1 {
             font-style: italic;
             font-family: 'Playfair Display';
         }
@@ -149,7 +149,7 @@
         .hr-blog {
             width: 18em;
             /* height: 0.5px; */
-            background-color: #bdbdbd00;
+            /* background-color: #bdbdbd00; */
             margin: 4em 0px;
         }
 
@@ -192,7 +192,35 @@
         }
 
         /* Tablette */
-        @media (min-width:768px)and (max-width:1023px) {}
+        @media (min-width:768px)and (max-width:1023px) {
+            .sidebar-search {
+                float: right;
+            }
+
+            .cartes {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(27em, auto));
+                margin-left: 1em;
+            }
+
+            .carte-full-width {
+                width: 100%;
+                max-width: 600px;
+                grid-column: 1 / 3;
+                margin: 0 auto;
+            }
+
+            .carte-full-width img {
+                width: 100%;
+            }
+            .btn-all-blogs{
+                    grid-column: 1 / 4;
+                            margin: 0 auto;
+            }
+            .hr-blog{
+                margin: 0 auto;
+            }
+        }
 
         @media (min-width:1024px)and (max-width:1279px) {}
 
@@ -247,7 +275,7 @@
                 <button>read more</button>
             </div>
 
-            <div class="one-cartes">
+            <div class="one-cartes carte-full-width ">
                 <img src="./assets/images/blog-img-carte.jpg" alt="">
                 <h2>lorem abcat</h2>
                 <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -271,7 +299,7 @@
                 <button>read more</button>
             </div>
 
-            <div class="one-cartes">
+            <div class="one-cartes carte-full-width">
                 <img src="./assets/images/blog-img-carte3.jpg" alt="">
                 <h2>lorem abcat</h2>
                 <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
@@ -282,9 +310,10 @@
             <!-- Button All Blogs -->
             <button class="btn-all-blogs">View all Blogs</button>
 
-            <hr class="hr-blog">
+            
 
         </section>
+        <hr class="hr-blog">
         <section class="sponsor-blog-section">
             <div>
                 <img src="./assets/images/Google.png" alt="google">
@@ -303,7 +332,9 @@
         </div>
 
         <div class="iframe-div">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.699891148376!2d-9.23766132605845!3d32.29304570856475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1761123101764!5m2!1sfr!2sma" class="iframe-blog" style="border:0;"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.699891148376!2d-9.23766132605845!3d32.29304570856475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1761123101764!5m2!1sfr!2sma"
+                class="iframe-blog" style="border:0;"></iframe>
         </div>
     </main>
     <footer></footer>
