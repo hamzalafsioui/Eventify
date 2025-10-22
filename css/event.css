@@ -147,7 +147,7 @@ body {
 
 /* ========================================================================================= */
 
-/* section text*/
+/* Section text*/
 
 .text-section {
   display: flex;
@@ -166,7 +166,7 @@ body {
 
 /* ========================================================================================= */
 
-/* events section*/
+/* Events section*/
 
 .div-events {
   display: flex;
@@ -193,6 +193,23 @@ body {
   border-radius: 50px;
   border: none;
   outline: none;
+}
+
+/* Events cards*/
+.section-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.section-card {
+
+}
+.section-card img{
+  width: 450px;
 }
 
 /* Responsive mobile */
