@@ -180,9 +180,13 @@ section .para_section {
 .result_search {
     width: 75%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
 .result_search .accordin {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,6 +194,9 @@ section .para_section {
 
 .result_search .panel {
     text-align: start;
+}
+.panel{
+    display: none;
 }
 
 /* ===============================section google map==================================*/
