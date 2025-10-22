@@ -10,25 +10,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/event-details.css" />
+    <script src="./js/script.js" defer></script>
     <title>Event Details</title>
   </head>
   <body>
     <header class="header-hero-container">
       <div class="header-content container">
         <div class="header-top">
-        <a href="#">FAQ</a>
+        <a href="#" class="faq">FAQ</a>
+        <img src="./assets/images/logo-eventify.png" alt="">
         <div class="auth-buttons">
           <a href="#"><button>SIGN UP</button></a>
           <a href="#"><button>LOGIN</button></a>
         </div>
         </div>
         <nav>
-          <ul>
+          <!-- menu  -->
+           <div class="menu" id="menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+           </div>
+          <ul class="nav-links" id="nav-links">
             <li><a>HOME</a></li>
             <li><a>ABOUT</a></li>
             <li><a>EVENTS</a></li>
             <li><a>BLOG</a></li>
             <li><a>CONTACT</a></li>
+            <li><a href="#" class="h-top">FQA</a></li>
+            <li><a href="#" class="h-top">SIGN UP</a></li>
+            <li><a href="#" class="h-top">LOGIN</a></li>
           </ul>
         </nav>
       </div>
