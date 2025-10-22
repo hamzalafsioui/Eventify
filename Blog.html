@@ -1,11 +1,63 @@
 <!doctype html>
 <html>
-<haed>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./css/Blog.css">
     <style>
+        /* header */
+        /* Header Navbar*/
+        .header-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-top>a {
+            text-decoration: none;
+            font-family: var(--main-font);
+            color: white;
+        }
+
+        .header-top>img {
+            width: 60px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        nav ul li a,
+        .h-top {
+            text-decoration: none;
+            color: white;
+            margin-right: 1.5rem;
+            font-family: var(--main-font);
+            /* font-weight: bold; */
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .h-top {
+            display: none;
+        }
+
+        .auth-buttons button {
+            background-color: var(--red-color);
+            color: white;
+        }
+
         /* hero setion */
         .hero-section-blog {
             background-image: url('./assets/images/hero-section-img-blog.png');
@@ -40,6 +92,7 @@
             margin-top: 5em;
             margin-top: 5em;
             display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
             /* grid-template-columns: repeat(auto-fill, minmax(22em, auto)); */
             /* margin-left: 1em; */
             justify-content: center;
@@ -305,10 +358,11 @@
 
             .sponsor-blog-section {
                 width: 73%;
-                 display: flex;
+                display: flex;
                 flex-direction: row;
                 justify-content: center;
             }
+
             .iframe-blog {
                 width: 83%;
             }
@@ -323,112 +377,145 @@
         Tablette : 768 – 1023px
         Mobile : ≤767px */
     </style>
-</haed>
+</head>
 
 <body>
     <header>
-
-    </header>
-    <main>
-        <!-- hero setion  -->
-        <section class="hero-section-blog">
-            <h1>Blog</h1>
-            <p>I should be incapable of drawing a single stroke at the present moment</p>
-            <button>let’s begin</button>
-        </section>
-
-        <section class="cartes container">
-            <!-- search sidebar  -->
-            <section class="sidebar-search">
-                <div class="input-search-sidebar">
-                    <input type="text" placeholder="search">
-                    <img src="./assets/images/search-icon.svg" alt="search-icon">
+        <header class="header-hero-container">
+            <div class="header-content container">
+                <div class="header-top">
+                    <a href="#" class="faq">FAQ</a>
+                    <img src="./assets/images/logo-eventify.png" alt="">
+                    <div class="auth-buttons">
+                        <a href="#"><button>SIGN UP</button></a>
+                        <a href="#"><button>LOGIN</button></a>
+                    </div>
                 </div>
-                <div class="sidebar-categorie">
-                    <h2>Catégories</h2>
-                    <a href="#">Événements à venir</a>
-                    <hr>
-                    <a href="#">Événements passés</a>
-                    <hr>
-                    <a href="#">Conseils & Organisation</a>
-                    <hr>
-                    <a href="#">Tendances & Inspirations</a>
-                    <hr>
-                    <a href="#">Actualités</a>
-                    <hr>
+                <nav>
+                    <!-- menu  -->
+                    <div class="menu" id="menu">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a>HOME</a></li>
+                        <li><a>ABOUT</a></li>
+                        <li><a>EVENTS</a></li>
+                        <li><a>BLOG</a></li>
+                        <li><a>CONTACT</a></li>
+                        <li><a href="#" class="h-top">FQA</a></li>
+                        <li><a href="#" class="h-top">SIGN UP</a></li>
+                        <li><a href="#" class="h-top">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- hero setion  -->
+            <section class="hero-section-blog">
+                <h1>Blog</h1>
+                <p>I should be incapable of drawing a single stroke at the present moment</p>
+                <button>let’s begin</button>
+            </section>
+
+            <section class="cartes container">
+                <!-- search sidebar  -->
+                <section class="sidebar-search">
+                    <div class="input-search-sidebar">
+                        <input type="text" placeholder="search">
+                        <img src="./assets/images/search-icon.svg" alt="search-icon">
+                    </div>
+                    <div class="sidebar-categorie">
+                        <h2>Catégories</h2>
+                        <a href="#">Événements à venir</a>
+                        <hr>
+                        <a href="#">Événements passés</a>
+                        <hr>
+                        <a href="#">Conseils & Organisation</a>
+                        <hr>
+                        <a href="#">Tendances & Inspirations</a>
+                        <hr>
+                        <a href="#">Actualités</a>
+                        <hr>
+                    </div>
+                </section>
+                <!-- LES CARTES -->
+                <div class="one-cartes first-carte">
+                    <img src="./assets/images/img-carte-1.png" alt="">
+                    <h2>lorem abcat</h2>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown</p>
+                    <button>read more</button>
+                </div>
+
+                <div class="one-cartes carte-full-width ">
+                    <img src="./assets/images/blog-img-carte.jpg" alt="">
+                    <h2>lorem abcat</h2>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown</p>
+                    <button>read more</button>
+                </div>
+
+                <div class="one-cartes">
+                    <img src="./assets/images/blog-img-carte1.jpg" alt="">
+                    <h2>lorem abcat</h2>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown</p>
+                    <button>read more</button>
+                </div>
+
+                <div class="one-cartes">
+                    <img src="./assets/images/blog-img-carte2.jpg" alt="">
+                    <h2>lorem abcat</h2>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown</p>
+                    <button>read more</button>
+                </div>
+
+                <div class="one-cartes carte-full-width">
+                    <img src="./assets/images/blog-img-carte3.jpg" alt="">
+                    <h2>lorem abcat</h2>
+                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's
+                        standard dummy text ever since the 1500s, when an unknown</p>
+                    <button>read more</button>
+                </div>
+
+            </section>
+            <!-- Button All Blogs -->
+            <button class="btn-all-blogs">View all Blogs</button>
+            <div class="div-hr-blog">
+                <hr class="hr-blog">
+            </div>
+            <section class="sponsor-blog-section">
+                <div>
+                    <img src="./assets/images/Google.png" alt="google">
+                    <img src="./assets/images/spotify.png" alt="spotify">
+                    <img src="./assets/images/microsoft.png" alt="microsoft">
+                    <img src="./assets/images/meduim.png" alt="meduim">
+                </div>
+                <div>
+                    <img src="./assets/images/Zoom.png" alt="zoom">
+                    <img src="./assets/images/Uber-logo.png" alt="uber">
+                    <img src="./assets/images/youtube.png" alt="youtub">
                 </div>
             </section>
-            <!-- LES CARTES -->
-            <div class="one-cartes first-carte">
-                <img src="./assets/images/img-carte-1.png" alt="">
-                <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown</p>
-                <button>read more</button>
+            <div class="div-hr-blog">
+                <hr class="hr-blog">
             </div>
 
-            <div class="one-cartes carte-full-width ">
-                <img src="./assets/images/blog-img-carte.jpg" alt="">
-                <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown</p>
-                <button>read more</button>
+            <div class="iframe-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.699891148376!2d-9.23766132605845!3d32.29304570856475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1761123101764!5m2!1sfr!2sma"
+                    class="iframe-blog" style="border:0;"></iframe>
             </div>
-
-            <div class="one-cartes">
-                <img src="./assets/images/blog-img-carte1.jpg" alt="">
-                <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown</p>
-                <button>read more</button>
-            </div>
-
-            <div class="one-cartes">
-                <img src="./assets/images/blog-img-carte2.jpg" alt="">
-                <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown</p>
-                <button>read more</button>
-            </div>
-
-            <div class="one-cartes carte-full-width">
-                <img src="./assets/images/blog-img-carte3.jpg" alt="">
-                <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown</p>
-                <button>read more</button>
-            </div>
-
-        </section>
-        <!-- Button All Blogs -->
-        <button class="btn-all-blogs">View all Blogs</button>
-        <div class="div-hr-blog">
-            <hr class="hr-blog">
-        </div>
-        <section class="sponsor-blog-section">
-            <div>
-                <img src="./assets/images/Google.png" alt="google">
-                <img src="./assets/images/spotify.png" alt="spotify">
-                <img src="./assets/images/microsoft.png" alt="microsoft">
-                <img src="./assets/images/meduim.png" alt="meduim">
-            </div>
-            <div>
-                <img src="./assets/images/Zoom.png" alt="zoom">
-                <img src="./assets/images/Uber-logo.png" alt="uber">
-                <img src="./assets/images/youtube.png" alt="youtub">
-            </div>
-        </section>
-        <div class="div-hr-blog">
-            <hr class="hr-blog">
-        </div>
-
-        <div class="iframe-div">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.699891148376!2d-9.23766132605845!3d32.29304570856475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1761123101764!5m2!1sfr!2sma"
-                class="iframe-blog" style="border:0;"></iframe>
-        </div>
-    </main>
-    <footer></footer>
+        </main>
+        <footer></footer>
 
 </body>
 
