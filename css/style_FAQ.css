@@ -178,6 +178,7 @@ h1 {
     .section_brands{
         text-align: center;
         padding: 3%;
+        margin-bottom: 5%;
     }
     .section_brands .container_Brands{
         width: 90%;
@@ -200,7 +201,80 @@ h1 {
         background-color: #EFEDE0;
         border-radius: 50%;
     }
+    .section_Subscribe{
+       text-align: center; 
+       padding: 0%;
+       width: 100%;
+    }
+    .section_Subscribe .send_subscribe_email{
+        width: 100%;
+        
+
+    }
+    .section_Subscribe .send_subscribe_email input{
+        width: 65%;
+        padding: 5%;
+    }
+    .section_Subscribe .send_subscribe_email button{
+        padding: 5%;
+    }
+    .section_Subscribe h4{
+
+    }
+    .section_Subscribe .container_subscribe_Brands{
+        display: grid;
+        grid-template-columns: repeat(4,50px);
+        grid-template-rows: repeat(1,50px);
+        column-gap: 5%;
+        text-align: center;
+        justify-content: center;
+        margin:10% 0%;
+        
+    }
+    .section_Subscribe .container_subscribe_Brands .cercle{
+        background-color: #EFEDE0;
+        border-radius: 50%;
+    }
+    .section_Subscribe .container_subscribe_Brands .cercle img{
+        width: 90%;
+        background-color: #EFEDE0;
+        border-radius: 50%;
+    }
+    /*----------------------- section fotter--------------------*/
+    footer{
+        background-color: #4F4F4F;
+    }
+    .container_footer{
+        padding: 10%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 10%;
+        justify-content: center;
+        text-align: center;
+    }
+    .container_footer:first-child  .container_footer_Brands{
+        display: grid;
+        grid-template-columns: repeat(3,50px);
+        grid-template-rows: repeat(1,50px);
+        gap:20px;
+        justify-content: center;
+
+    }
+    .container_footer:first-child  .container_footer_Brands  .cercle{
+        background-color: #EFEDE0;
+        border-radius: 50%;
+    }
+    .container_footer .footer_card ul{
+        list-style-type: none;
+        
+    }
+    .container_footer .footer_card ul li a{
+        text-decoration: none;
+        color: #EFEDE0;
+    }
     
-
-
+    .copyright{
+        text-align: center;
+    }
 }
+    
