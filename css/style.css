@@ -2,7 +2,7 @@
 :root{
   --red-color: #961F1F;
   --gray-color: #4F4F4F;
-  --main-font: lato;
+  --main-font: 'lato';
 }
 
 @font-face {
@@ -23,7 +23,7 @@ body {
   font-family: var(--main-font);
   line-height: 1.6;
   color: #fff;         
-  background-color: #000; 
+  background-color: rgba(0, 0, 0, 0.977); 
 }
 .container {
   width: 90%;
@@ -32,5 +32,5 @@ body {
 }
 
 h1{
-font-family: 'lato-bold';
+font-family: var(--main-font);
 }
