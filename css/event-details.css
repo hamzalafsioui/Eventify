@@ -259,6 +259,9 @@ hr {
   margin-left: 40%;
   font-size: 0.9rem;
 }
+.interested-card h5,.interested-card p{
+  margin-left: 10px;
+}
 
 /* Menu */
 .menu {
