@@ -247,7 +247,71 @@
         }
 
         @media (min-width:1023px)and (max-width:1279px) {
-          
+            .sidebar-search {
+                grid-area: search;
+                margin-left: 7em;
+                width: 24em;
+            }
+
+            .sidebar-search .input-search-sidebar {
+                text-align: center;
+            }
+
+            .sidebar-search .input-search-sidebar input {
+                width: 18em;
+            }
+
+            .sidebar-search .input-search-sidebar img {
+                left: 17em;
+            }
+
+            .first-carte {
+                grid-area: first-carte;
+                width: 100%;
+            }
+
+            .cartes {
+                grid-template-areas: "first-carte search";
+                gap: 1em;
+                justify-content: space-evenly;
+            }
+
+            .first-carte img {
+                width: 100%;
+            }
+
+            .cartes div:nth-child(3),
+            .cartes div:nth-child(4) {
+                width: 99%;
+            }
+
+            .cartes div:nth-child(3) img,
+            .cartes div:nth-child(4) img {
+                width: 100%;
+            }
+
+            /* .cartes div:nth-child(5) {
+                width: 75%;
+            } */
+
+            .cartes div:nth-child(6) {
+                width: 35em;
+            }
+
+            .cartes div:nth-child(5) img,
+            .cartes div:nth-child(6) img {
+                width: 100%;
+            }
+
+            .sponsor-blog-section {
+                width: 73%;
+                 display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .iframe-blog {
+                width: 83%;
+            }
 
         }
 
