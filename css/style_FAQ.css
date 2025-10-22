@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "lato";
-  src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf');
 }
 @font-face {
   font-family: "playfair";
@@ -52,7 +52,9 @@ section .title-section{
     margin: 30px;
     font-size: 50px;
 }
-
+section .para_section{
+    margin-bottom: 2%;
+}
 .hero_section {
     text-align: center;
     padding-bottom: 10%;
@@ -96,7 +98,7 @@ section .title-section{
     display: grid;
     grid-template-columns: repeat(1, 1fr 1fr 1fr);
     gap: 30px;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .section_faq_question .cards_faq .card {
@@ -137,34 +139,40 @@ section .title-section{
 
 .section_search_faq_question .container_search {
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
 
 }
 
 .section_search_faq_question .container_search input {
-    width: 75%;
-    padding: 3%;
+    width: 60%;
+    padding: 1.5%;
     padding-left: 25px;
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
     background-size: 20px;
     background-color: white;
+    border-radius: 10px;
 
 }
 
 .section_search_faq_question .container_search button {
-    width: 24%;
-    padding: 3%;
-    border-radius: 50px;
+    width: 15%;
+    padding: 1.3%;
+    border-radius: 10px;
+    background-size: 20px;
 }
 
+
 .section_search_faq_question .result_search {
-    width: 100%;
+    width: 75%;
+    margin: 0% auto;
+    text-align: center;
 }
 
 .section_search_faq_question .result_search .accordin {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .section_search_faq_question .result_search .panel {
@@ -174,7 +182,9 @@ section .title-section{
 /*--------------------- section carte google map-------------------*/
 .section_faq_google_map {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 5%;
+    height: 500px;
+    margin-bottom: 60px;
 }
 
 .section_faq_google_map h2 {
@@ -184,6 +194,11 @@ section .title-section{
 
 .section_faq_google_map .map-responsive {
     width: 100%;
+    height: 100%;
+}
+.section_faq_google_map .map-responsive iframe{
+    width: 100%;
+    height: 100%;
 }
 
 /*---------------------------section poser question-------------------*/
@@ -199,7 +214,7 @@ section .title-section{
 .section_faq_poser_question .group_form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     margin: 0% auto;
 }
 
@@ -210,7 +225,7 @@ section .title-section{
 .section_faq_poser_question .group_form input,
 textarea {
     background-color: transparent;
-    border: 1.5px solid white;
+    border: 3px solid white;
     border-radius: 50px;
     padding: 10px;
     text-align: start;
@@ -355,6 +370,19 @@ footer {
 }
 
 @media screen and (max-width:767px) {
+    /*--------------------header-----------------------------*/
+    .hero_section{
+        padding-bottom: 0%;
+    }
+    .hero_section h4{
+        font-size: 20px;
+    }
+    .hero_section h2{
+        font-size: 40px;
+    }
+    .hero_section h3{
+        font-size: 20px;
+    }
 
     /*--------------------------section 1 faq question-------------------------*/
     .section_faq_question {
@@ -437,7 +465,7 @@ footer {
     /*--------------------- section carte google map-------------------*/
     .section_faq_google_map {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 300px;
     }
 
     .section_faq_google_map h2 {
@@ -473,7 +501,7 @@ footer {
     .section_faq_poser_question .group_form input,
     textarea {
         background-color: transparent;
-        border: 1.5px solid white;
+        border: 3px solid white;
         border-radius: 50px;
         padding: 10px;
         text-align: start;
