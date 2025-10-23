@@ -14,7 +14,7 @@
     <header>
       <div class="header-first-section">
         <div class="FAQ">
-          <p>FAQ</p>
+          <a href="FAQ.html" class="lien-FAQ"><p>FAQ</p></a>
         </div>
         <img src="./assets/images/Eventfy.png" class="img-logo" alt="LOGO" />
         <div class="btn-div">
@@ -24,12 +24,21 @@
       </div>
       <div class="header-second-section">
         <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">BLOG</a></li>
+          <!-- menu  -->
+          <div class="menu" id="menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </div>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
             <li><a href="#">CONTACT</a></li>
+            <li><a href="FAQ.html" class="h-top">FAQ</a></li>
+            <li><a href="#" class="h-top">SIGN UP</a></li>
+            <li><a href="#" class="h-top">LOGIN</a></li>
           </ul>
         </nav>
       </div>
@@ -65,7 +74,7 @@
       <h2>Events</h2>
       <form>
         <select name="categorie" id="categorie">
-          <option value="marketing">marketing</option>
+          <option value="Marketing">Marketing</option>
           <option value="événementiel">événementiel</option>
           <option value="commémoratif">commémoratif</option>
         </select>
@@ -82,36 +91,141 @@
       </form>
     </div>
     <div class="section-card">
-      <div class="card-1">
+      <div class="card">
+        <div class="card-img"> 
         <img src="./assets/images/Event1.png" alt="Event 1">
+        </div>
         <h3>Festival des Arts et Talents Locaux</h3>
         <p>20/04/2025</p>
         <p>Miami</p>
-        <a href="#">Read More</a>
+        <a href="event-details.html" class="read">Read More</a>
       </div>
-      <div class="card-2">
+      <div class="card">
+        <div class="card-img"> 
         <img src="./assets/images/Event2.png" alt="Event 2">
+        </div>
         <h3>Festival des Arts et Talents Locaux</h3>
         <p>20/04/2025</p>
         <p>Casablanca</p>
-        <a href="#">Read More</a>
+         <a href="event-details.html" class="read">Read More</a>
       </div>
-      <div class="card-3">
+      <div class="card">
+        <div class="card-img"> 
         <img src="./assets/images/Event5.png" alt="Event 3">
+        </div>
         <h3>Festival des Arts et Talents Locaux</h3>
         <p>20/04/2025</p>
         <p>Rabat</p>
-        <a href="#">Read More</a>
+         <a href="event-details.html" class="read">Read More</a>
       </div>
-      <div class="card-4">
+      <div class="card">
+        <div class="card-img"> 
         <img src="./assets/images/Event2.png" alt="Event 4">
+        </div>
         <h3>Festival des Arts et Talents Locaux</h3>
         <p>20/04/2025</p>
         <p>New york</p>
-        <a href="#">Read More</a>
+        <a href="event-details.html" class="read">Read More</a>
       </div>
     </div>
   </section>
+  <section class="events-future">
+    <div class="events-title">
+      <h2>Événements à venir/ Événements passés</h2>
+      <hr style="width: 40%;">
+      </hr>
+    </div>
+    <h3 class="title-event-future">Événements à venir</h3>
+    <div class="section-card">
+      <div class="card">
+        <div class="card-img"> 
+        <img src="./assets/images/Event1.png" alt="Event 1">
+        </div>
+        <h3>Festival des Arts et Talents Locaux</h3>
+        <p>20/04/2025</p>
+        <p>Miami</p>
+         <a href="event-details.html" class="read">Read More</a>
+      </div>
+      <div class="card">
+        <div class="card-img"> 
+        <img src="./assets/images/Event2.png" alt="Event 2">
+        </div>
+        <h3>Festival des Arts et Talents Locaux</h3>
+        <p>20/04/2025</p>
+        <p>Casablanca</p>
+         <a href="event-details.html" class="read">Read More</a>
+      </div>
+    </div>
+  </section>
+  <section class="events-future">
+     <div class="events-title">
+      <hr style="width: 40%;">
+    </div>
+    <h3 class="title-event-past">Événements passés</h3>
+    <div class="section-card">
+      <div class="card">
+        <div class="card-img"> 
+           <img src="./assets/images/Event1.png" alt="Event 1">
+        </div>
+        <h3>Festival des Arts et Talents Locaux</h3>
+        <p>20/04/2025</p>
+        <p>Miami</p>
+         <a href="event-details.html" class="read">Read More</a>
+      </div>
+      <div class="card">
+        <div class="card-img"> 
+        <img src="./assets/images/Event2.png" alt="Event 2">
+        </div>
+        <h3>Festival des Arts et Talents Locaux</h3>
+        <p>20/04/2025</p>
+        <p>Casablanca</p>
+         <a href="event-details.html" class="read">Read More</a>
+      </div>
+    </div>
+  </section>
+       <hr class="container" />
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-eventify">
+          <h5>Eventify</h5>
+          <p>
+            A wonderful serenity has taken possessionof my ntire s oul, like
+            thesesweet mornings of spring which Injoy with
+          </p>
+          <div class="footer-socials">
+            <img src="./assets/images/linkedin.png" alt="">
+            <img src="./assets/images/facebook.png" alt="" >
+            <img src="./assets/images/twitter.png" alt="">
+          </div>
+        </div>
+        <div class="footer-festival">
+          <h5>Festival</h5>
+
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html">ABOUT</a>
+            <a href="event.html">EVENTS</a>
+            <a href="Blog.html">BLOG</a>
+            <a href="#">CONTACT</a>
+            <a href="FAQ.html">FAQ</a>
+          </div>
+        </div>
+        <div class="footer-opinion">
+          <h5>type your opinion</h5>
+          <div class="send-box">
+            <input type="text" placeholder="Type here ..." />
+            <a href=""><button>share now</button></a>
+          </div>
+          <p>
+            A wonderful serenity has taken possession of my ntire s oul, like
+          </p>
+        </div>
+      </div>
+      <hr class="container" />
+      <p class="copy-right">Copyright &copy; 2025 youcode</p>
+    </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

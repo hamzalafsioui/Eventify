@@ -69,6 +69,7 @@ nav ul li a,
   /* font-weight: bold; */
   font-weight: 300;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .h-top {
   display: none;
@@ -77,6 +78,16 @@ nav ul li a,
   background-color: var(--red-color);
   color: white;
 }
+.nav-links a:hover,.faq:hover{
+  color: var(--red-color);
+  font-weight: 600;
+}
+.auth-buttons button:hover,.btn-discover:hover{
+  box-shadow: 1px 1px 15px white;
+  transform: translateY(-3px);
+}
+
+
 
 /* header section & hero */
 
@@ -288,6 +299,7 @@ hr {
 /* Footer */
 footer {
   margin-top: 2rem;
+  background-color: #262626;
 }
 .footer-content {
   display: flex;
@@ -317,6 +329,10 @@ footer {
   flex-direction: column;
   margin-left: 10px;
   gap: 0.5rem;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: white;
 }
 .footer-festival ul {
   display: flex;
@@ -378,7 +394,7 @@ footer {
 
 .copy-right {
   text-align: center;
-  margin: 2rem auto;
+  padding: 1rem 0;
 }
 
 /*  Responsive  */
