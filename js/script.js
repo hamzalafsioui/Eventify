@@ -14,14 +14,14 @@ menu.addEventListener('click',function(){
 const imagesCollections = document.querySelectorAll(".ed-content-imgs");
 imagesCollections.forEach(collect=>{
     const images = collect.querySelectorAll("img");
-    console.log(images);
+    // console.log(images);
     let indexNextImg = 1; // 1 refer to second image after first-child
 
     function swapImage(){
         const prevImg = images[0]; // index 0 refer to first image (first child)
         const nextImg = images[indexNextImg]; 
-        console.log("prev:",prevImg);
-        console.log("next:" ,prevImg);
+        // console.log("prev:",prevImg);
+        // console.log("next:" ,prevImg);
 
         const tempSrc = prevImg.src;
         const tempAlt = prevImg.alt;
