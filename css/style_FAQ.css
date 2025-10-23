@@ -1,12 +1,17 @@
 :root {
-    --red-color: #961F1F;
-    --gray-color: #4F4F4F;
-    --main-font: 'lato';
+  --red-color: #961f1f;
+  --gray-color: #4f4f4f;
+  --main-font: "lato";
+  --header-font: "playfair";
 }
 
 @font-face {
-    font-family: 'lato';
-    src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+  font-family: "lato";
+  src: url('/assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: "playfair";
+  src: url("assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 
 * {
@@ -37,6 +42,318 @@ h1 {
     font-family: var(--main-font);
 }
 
+/*----------------------header-------------------------------*/
+header {
+    padding: 10%;
+}
+section .title-section{
+    font-family: var(--header-font);
+    font-style: italic;
+    margin: 30px;
+    font-size: 50px;
+}
+
+.hero_section {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.hero_section h4 {
+    color: #53686A;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero_section h2 {
+    color: #73A58B;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero_section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero_section input {
+    font-size: 20px;
+    border-radius: 8px;
+    width: 50%;
+    padding: 1%;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.section_faq_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.section_faq_question .cards_faq {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    gap: 30px;
+    margin-bottom: 5%;
+}
+
+.section_faq_question .cards_faq .card {
+    background-color: #3C3939;
+    border-radius: 20px;
+    padding: 7%;
+}
+
+.section_faq_question .more_question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #EFEDE0;
+    color: black;
+    border-radius: 20px;
+    padding: 1%;
+
+}
+
+.section_faq_question .more_question a {
+    background-color: #53686A;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.section_faq_question .more_question div {
+    text-align: start;
+}
+
+/*--------------------section 2 search -------------------*/
+.section_search_faq_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.section_search_faq_question .container_search {
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+
+.section_search_faq_question .container_search input {
+    width: 75%;
+    padding: 3%;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+
+}
+
+.section_search_faq_question .container_search button {
+    width: 24%;
+    padding: 3%;
+    border-radius: 50px;
+}
+
+.section_search_faq_question .result_search {
+    width: 100%;
+}
+
+.section_search_faq_question .result_search .accordin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_search_faq_question .result_search .panel {
+    text-align: start;
+}
+
+/*--------------------- section carte google map-------------------*/
+.section_faq_google_map {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section_faq_google_map h2 {
+    margin-bottom: 20px;
+
+}
+
+.section_faq_google_map .map-responsive {
+    width: 100%;
+}
+
+/*---------------------------section poser question-------------------*/
+.section_faq_poser_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.section_faq_poser_question h2 {
+    margin-bottom: 20px;
+}
+
+.section_faq_poser_question .group_form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0% auto;
+}
+
+.section_faq_poser_question .group_form label {
+    text-align: start;
+}
+
+.section_faq_poser_question .group_form input,
+textarea {
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: start;
+}
+
+.section_faq_poser_question .group_form.checkbox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section_faq_poser_question button {
+    width: 80%;
+    padding: 3%;
+    border-radius: 50px;
+    background-color: #3C3939;
+    color: white;
+}
+
+/*--------------------section brands--------------------------*/
+.section_brands {
+    text-align: center;
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.section_brands .container_Brands {
+    width: 90%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    justify-content: space-between;
+    row-gap: 20px;
+    grid-template-rows: 50px 50px 50px;
+}
+
+.section_brands .container_Brands .cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEDE0;
+    border-radius: 50%;
+}
+
+.section_brands .container_Brands .cercle img {
+    width: 90%;
+    background-color: #EFEDE0;
+    border-radius: 50%;
+}
+
+.section_Subscribe {
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+}
+
+.section_Subscribe .send_subscribe_email {
+    width: 100%;
+
+
+}
+
+.section_Subscribe .send_subscribe_email input {
+    width: 65%;
+    padding: 5%;
+}
+
+.section_Subscribe .send_subscribe_email button {
+    padding: 5%;
+}
+
+.section_Subscribe h4 {}
+
+.section_Subscribe .container_subscribe_Brands {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(1, 50px);
+    column-gap: 5%;
+    text-align: center;
+    justify-content: center;
+    margin: 10% 0%;
+
+}
+
+.section_Subscribe .container_subscribe_Brands .cercle {
+    background-color: #EFEDE0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_Subscribe .container_subscribe_Brands .cercle img {
+    width: 90%;
+    background-color: #EFEDE0;
+    border-radius: 50%;
+}
+
+/*----------------------- section fotter--------------------*/
+footer {
+    background-color: #4F4F4F;
+}
+
+.container_footer {
+    padding: 10%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+.container_footer:first-child .container_footer_Brands {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(1, 50px);
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.container_footer:first-child .container_footer_Brands .cercle {
+    background-color: #EFEDE0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_footer .footer_card ul {
+    list-style-type: none;
+
+}
+
+.container_footer .footer_card ul li a {
+    text-decoration: none;
+    color: #EFEDE0;
+}
+
+.copyright {
+    text-align: center;
+}
+
 @media screen and (max-width:767px) {
 
     /*--------------------------section 1 faq question-------------------------*/
@@ -47,7 +364,7 @@ h1 {
 
     .section_faq_question .cards_faq {
         display: grid;
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         margin-bottom: 10%;
     }
@@ -162,25 +479,28 @@ h1 {
         text-align: start;
     }
 
-    .section_faq_poser_question .group_form.checkbox{
+    .section_faq_poser_question .group_form.checkbox {
         width: 100%;
         display: flex;
-        flex-direction:row ;
+        flex-direction: row;
     }
-    .section_faq_poser_question button{
+
+    .section_faq_poser_question button {
         width: 80%;
         padding: 3%;
         border-radius: 50px;
         background-color: #3C3939;
         color: white;
     }
+
     /*--------------------section brands--------------------------*/
-    .section_brands{
+    .section_brands {
         text-align: center;
         padding: 3%;
         margin-bottom: 5%;
     }
-    .section_brands .container_Brands{
+
+    .section_brands .container_Brands {
         width: 90%;
         margin: 0% auto;
         display: grid;
@@ -189,92 +509,114 @@ h1 {
         row-gap: 20px;
         grid-template-rows: 50px 50px 50px;
     }
-    .section_brands .container_Brands .cercle{
+
+    .section_brands .container_Brands .cercle {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #EFEDE0;
         border-radius: 50%;
     }
-    .section_brands .container_Brands .cercle img{
+
+    .section_brands .container_Brands .cercle img {
         width: 90%;
         background-color: #EFEDE0;
         border-radius: 50%;
     }
-    .section_Subscribe{
-       text-align: center; 
-       padding: 0%;
-       width: 100%;
-    }
-    .section_Subscribe .send_subscribe_email{
+
+    .section_Subscribe {
+        text-align: center;
+        padding: 0%;
         width: 100%;
-        
+    }
+
+    .section_Subscribe .send_subscribe_email {
+        width: 100%;
+
 
     }
-    .section_Subscribe .send_subscribe_email input{
+
+    .section_Subscribe .send_subscribe_email input {
         width: 65%;
         padding: 5%;
     }
-    .section_Subscribe .send_subscribe_email button{
+
+    .section_Subscribe .send_subscribe_email button {
         padding: 5%;
     }
-    .section_Subscribe h4{
 
-    }
-    .section_Subscribe .container_subscribe_Brands{
+    .section_Subscribe h4 {}
+
+    .section_Subscribe .container_subscribe_Brands {
         display: grid;
-        grid-template-columns: repeat(4,50px);
-        grid-template-rows: repeat(1,50px);
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: repeat(1, 50px);
         column-gap: 5%;
         text-align: center;
         justify-content: center;
-        margin:10% 0%;
-        
+        margin: 10% 0%;
+
     }
-    .section_Subscribe .container_subscribe_Brands .cercle{
+
+    .section_Subscribe .container_subscribe_Brands .cercle {
         background-color: #EFEDE0;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .section_Subscribe .container_subscribe_Brands .cercle img{
+
+    .section_Subscribe .container_subscribe_Brands .cercle img {
         width: 90%;
         background-color: #EFEDE0;
         border-radius: 50%;
     }
+
     /*----------------------- section fotter--------------------*/
-    footer{
+    footer {
         background-color: #4F4F4F;
     }
-    .container_footer{
+
+    .container_footer {
         padding: 10%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 10%;
         justify-content: center;
         text-align: center;
     }
-    .container_footer:first-child  .container_footer_Brands{
+
+    .container_footer:first-child .container_footer_Brands {
         display: grid;
-        grid-template-columns: repeat(3,50px);
-        grid-template-rows: repeat(1,50px);
-        gap:20px;
+        grid-template-columns: repeat(3, 50px);
+        grid-template-rows: repeat(1, 50px);
+        gap: 20px;
         justify-content: center;
 
     }
-    .container_footer:first-child  .container_footer_Brands  .cercle{
+
+    .container_footer:first-child .container_footer_Brands .cercle {
         background-color: #EFEDE0;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .container_footer .footer_card ul{
+
+    .container_footer .footer_card ul {
         list-style-type: none;
-        
+
     }
-    .container_footer .footer_card ul li a{
+
+    .container_footer .footer_card ul li a {
         text-decoration: none;
         color: #EFEDE0;
     }
-    
-    .copyright{
+
+    .copyright {
         text-align: center;
     }
 }
-    
+
+/*----------------version tablette------------------------*/
+@media screen and (min-width:768px) and (max-width:1023px) {}
