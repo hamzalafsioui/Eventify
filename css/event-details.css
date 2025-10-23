@@ -285,6 +285,92 @@ hr {
 
 /*  */
 
+
+/* Footer */
+footer{
+  margin-top: 2rem;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  margin: 1rem auto;
+}
+.footer-eventify{
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+.footer-socials img{
+  width: 80px;
+}
+.footer-eventify p,.footer-opinion p{
+color: #828282;
+}
+.footer-festival{
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 0.5rem;
+}
+.footer-festival ul {
+  display: flex;
+  flex-direction: column;
+
+}
+.footer-opinion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-opinion p{
+  font-size: 1.2rem;
+  text-align: start;
+  max-width: 300px;
+  color: #828282;
+}
+.send-box{
+  position: relative;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.send-box input{
+  min-width: 350px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #6C6C6C;
+  
+}
+.send-box button{
+  position: absolute;
+  background-color: #010101;
+  color: white;
+  font-style: italic;
+  border-radius: 50px;
+  width: 120px;
+  height: 40px;
+  font-size: 0.9rem;
+  top: 15%;
+  right: 5%;
+}
+.footer-festival h5,.footer-opinion h5,.footer-content h5{
+  font-family: var(--header-font);
+  font-size: 50px;
+}
+
+.copy-right{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+
+
 /*  Responsive  */
 
 @media (max-width: 1024px) {
