@@ -6,7 +6,16 @@
   --title-font:Playfair-Display;
   --timeOf-font:Fugaz-One;
 }
-
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @font-face {
   font-family: 'lato';
   src: url("../assets/fonts/Lato/Lato-Regular.ttf");
@@ -37,55 +46,86 @@ body{
   max-width: 1200px;
   margin: 0 auto;
 }
-header{
-    z-index: 1;
+.header-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.first-section-header{
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-top {
+  display: flex;
+  justify-content: space-between;
 }
-.first-section-header img{
-    width: 300px;
-    height: 150px;
-    padding-left: 10%;
+.menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
 }
-.first-section-header .button-header{
-    margin-right: 3%;
+.menu-bar {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
 }
-.first-section-header .button-header button{
-    background-color: var(--red-color);
-    border: none;
-    width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    font-size: 17px;
-    color: white;
-    font-weight: bold;
+
+.menuActive span:nth-child(1) {
+      transform: rotate(45deg) translate(12px);
 }
-.second-section-header{
-    margin-right: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4%;
+.menuActive span:nth-child(2) {
+    opacity: 0;
 }
-.second-section-header li{
-    list-style-type: none;
+.menuActive span:nth-child(3) {
+      transform: rotate(-45deg) translate(12px);
 }
-.first-section-header a,
-.second-section-header li a{
-    text-decoration: none;
-    color: white;
+.header-top > a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: white;
 }
+.header-top > img {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li a,
+.h-top ,.faq{
+  text-decoration: none;
+  color: white;
+  margin-right: 1.5rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+  font-size: 20px;
+}
+.h-top {
+  display: none;
+}
+.auth-buttons button {
+  background-color: var(--red-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .hero-section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.686)),url('../assets/images/Home-hero-section.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-      height: 100%;
+    min-width:100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,10 +165,13 @@ header{
     font-weight: blod;
 }
 .about-section{
-  margin-top: 40%;
+  margin-top: 35rem;
   margin-left: -18%;
-  position: relative;
+  display: flex;
+  gap: 1%;
+  flex-direction: row-reverse;
 }
+
 .main-image{
   width: 95%;
   height: 65vh;
@@ -163,11 +206,6 @@ header{
   color: var(--gray-color);
   line-height: 1.3;
   font-size: 15px;
-}
-.about-section{
-  display: flex;
-  gap: 1%;
-  flex-direction: row-reverse;
 }
 .event-section h2{
   margin: 5%;
@@ -217,7 +255,7 @@ header{
   border: none;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 7%;
+  margin-top: 9%;
   margin-left: 40%;
 }
 .comments-setion h2{
@@ -251,9 +289,8 @@ header{
 }
 .vertical-line {
   position: relative;
-  top: 2%;
   width: 4px;
-  height: 45vh;
+  height: 100%;
   background-color: var(--red-color);
 }
 .sponsor-section{
@@ -283,42 +320,185 @@ header{
   margin-left: 75%;
 }
 
+
+@media (max-width: 1023px) and (min-width : 768px){
+  .logo{
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 4%;
+    right: -24%;
+  }
+  .menu-bar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  nav ul,
+  .auth-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .faq {
+    display: none;
+  }
+  .h-top {
+    display: flex;
+  } 
+
+  .active {
+    margin-top: -20px;
+    line-height: 1.7;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlide 0.6s ease forwards;
+  }
+  .active li a{
+        text-shadow: 1px 1px 20px white;
+  }
+  .hero-section{
+    height: 75%;
+    min-width: 132%;
+  }
+  .about-section{
+    display: flex;
+    margin-top: 43rem;
+    width: 149%;
+  }
+  .about-active{
+    margin-top: 25rem;
+  }
+  .about-section p{
+    width: 90%;
+  }
+  .about-image-section{
+    width: 47%;
+  }
+  .main-image{
+    height: 40vh;
+  }
+  .images img{
+    height: 15vh;
+  }
+  .event-section h2{
+    margin-left: 10%;
+  }
+  .cards-section{
+    margin-left: 5rem;
+    min-width: 120%;
+  }
+  .cards-section .card img{
+    width: 320px;
+    height: 30vh;
+  }
+  .cards-section .card h3{
+    font-size: 14px;
+  }
+  .cards-section .card p{
+    font-size: 12px;
+  }
+  .etoiles-section i{
+    font-size: 25px;
+  }
+  .event-section a button{
+      margin-left: 55%;
+  }
+  .comments-card{
+    min-width: 120%;
+  }
+  .comments-setion h2{
+    margin-left: 28%;
+  }
+  .sponsor-section{
+    min-width: 120%;
+  }
+  .image-section-sponsor{
+    column-gap: 6%;
+  }
+}
+
+
 @media (max-width: 767px) {
-    header{
-        display: none;
-    }
-    .first-section-header,
-    .second-section-header{
-        flex-direction: column;
-    }
-    .first-section-header img{
-        width: 80px;
-        height: 70px;
-        margin-right: 90%;
-    }
+  .logo{
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 13%;
+  }
+  .menu-bar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  nav ul,
+  .auth-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .faq {
+    display: none;
+  }
+  .h-top {
+    display: flex;
+  } 
+
+  .active {
+    margin-top: -20px;
+    line-height: 1.7;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlide 0.6s ease forwards;
+  }
+  .active li a{
+        text-shadow: 1px 1px 20px white;
+  }
+  .hero-active{
+    position: relative;
+    top: 100px;
+  }
     .hero-section{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: auto;
+        height: 100vh;
         padding-bottom: 15%;
     }
     .hero-section button{
         width: 154px;
         height: 38px;
-        margin-left: 35%;
+        margin-left: 9rem;
     }
     .hero-section h1{
-        margin-left: 7%;
+        margin-top: 18rem;
+        margin-left: 2rem;
     }
     .hero-section h4{
-        margin-left: 20%;
+        margin-left: 5rem;
     }
     .hero-section h5{
-        margin-left: 31%;
+        margin-left: 9rem;
     }
     .about-section{
-       margin-top: 106%;
+      margin-top: 52rem;     
       margin-left: 5%;
       margin-right: 19%;
     }
@@ -341,7 +521,7 @@ header{
     }
     .cards-section{
       grid-template-columns: 1fr;
-      margin-left: 10%;
+      margin-left: 4rem;
     }
     .cards-section .card{
       margin-bottom: -5%;
@@ -350,14 +530,16 @@ header{
       display: none;
     }
     .event-section h2{
-      text-align: center;
+      margin-top: 6rem;
+      font-size: 60px;
+      margin-left: 8rem;
     }
     .cards-section .card img{
       height: 30vh;
     }
   .event-section a button{
         margin-top: 45%;
-        margin-left: 20%;
+        margin-left: 7rem;
   }
   .comments-setion h2{
     margin-bottom: 15%;

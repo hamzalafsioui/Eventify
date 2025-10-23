@@ -8,33 +8,47 @@
     <title>Eventify</title>
   </head>
   <body>
-    <header>
-        <div class="first-section-header">
-            <a href="#" style="padding-left:5% ;">FAQ</a>
-            <img src="./assets/images/Home-logo.png" alt="logo">
-            <div class="button-header">
-                <a href="#"><button>Sign Up</button></a>
-                <a href="#"><button>Login</button></a>
-            </div>
+    <header class="header-hero-container">
+      <div class="header-content container">
+        <div class="header-content ">
+        <div class="header-top">
+        <a href="FAQ.html" class="faq">FAQ</a>
+        <img src="./assets/images/logo-eventify.png" alt="logo" class="logo">
+        <div class="auth-buttons">
+          <a href="#"><button>SIGN UP</button></a>
+          <a href="#"><button>LOGIN</button></a>
+        </div>
         </div>
         <nav>
-          <ul class="second-section-header">
-              <li> <a href="Home">Home</a></li>
-              <li><a href="About">About</a></li>
-              <li><a href="Events">Events</a></li>
-              <li><a href="Blog">Blog</a></li>
-              <li><a href="Contact">Contact</a></li>
+          <!-- menu  -->
+           <div class="menu" id="menu">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+           </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about-section">ABOUT</a></li>
+            <li><a href="event.html">EVENTS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" class="h-top">FQA</a></li>
+            <li><a href="#" class="h-top">SIGN UP</a></li>
+            <li><a href="#" class="h-top">LOGIN</a></li>
           </ul>
         </nav>
+      </div>
+        <section class="hero-section">
+            <div class="hero-move" id="hero-move">
+              <h1>Eventify</h1>
+              <h5> start in : </h5>
+              <h4 id="time">12: 30 : 59</h4>
+              <a href="#"><button>Load More</button></a>
+            </div>
+        </section>
     </header>
     <main>
-        <section class="hero-section">
-            <h1>Eventify</h1>
-            <h5> start in : </h5>
-            <h4>12: 30 : 90</h4>
-            <a href="#"><button>Load More</button></a>
-        </section>
-        <section class="about-section">
+        <section class="about-section" id="about-section">
           <div class="about-texte">
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero explicabo corrupti, hic ipsa, cumque quia aliquid quam, dolore porro vel quos incidunt rem exercitationem mollitia at consequatur? Eius <br>culpa quaerat ullam magni, libero sed ab hic repudiandae quia amet temporibus, odit voluptate cumque illo accusantium numquam. Enim quidem non pariatur aspernatur ratione culpa quae repudiandae. Totam maiores nostrum voluptatem eum quia ad eius, nulla blanditiis explicabo dolor voluptates necessitatibus delectus voluptatibus ducimus reprehenderit qui dolore dignissimos tempore impedit. Asperiores itaque maxime sint harum corrupti suscipit ratione voluptate voluptatum nemo qui! Officiis obcaecati vero hic quo adipisci ipsam error incidunt magnam cum voluptatum? In, vitae architecto ab inventore soluta accusamus  <br>iusto! Nulla tempore ducimus autem recusandae incidunt officia sunt, sed odio sit doloremque obcaecati eius. Aspernatur, quisquam quidem dicta <br> architecto maxime nam tempora fuga esse aliquid quia, voluptatibus excepturi. Itaque, temporibus aliquam. <br>Perspiciatis pariatur cupiditate ex officiis soluta sapiente ullam magnam nobis optio, nostrum placeat autem eum inventore! Fuga officia reiciendis ipsum accusantium <br> eligendi corrupti mollitia voluptas, ex distinctio labore.</p>
@@ -173,7 +187,7 @@
             </div>
           </div>
         </section>
-        <section class="sponsor-section">
+        <section class="sponsor-section ">
           <h2>sponsored by</h2>
           <div class="image-section-sponsor">
             <img src="./assets/images/Home-sponsor-1.png" alt="sponsor 1" class="image-grand">
@@ -186,10 +200,6 @@
           </div>
         </section>
     </main>
-
-
-
-
-    <script src="js/script.js"></script>
+    <script src="js/script-Home.js"></script>
   </body>
 </html>
