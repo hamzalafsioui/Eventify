@@ -78,7 +78,7 @@ nav ul li a,
   background-color: var(--red-color);
   color: white;
 }
-.nav-links a:hover,.faq{
+.nav-links a:hover,.faq:hover{
   color: var(--red-color);
   font-weight: 600;
 }
@@ -299,6 +299,7 @@ hr {
 /* Footer */
 footer {
   margin-top: 2rem;
+  background-color: #262626;
 }
 .footer-content {
   display: flex;
@@ -393,7 +394,7 @@ footer {
 
 .copy-right {
   text-align: center;
-  margin: 2rem auto;
+  padding: 1rem 0;
 }
 
 /*  Responsive  */
