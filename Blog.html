@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
-<haed>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/Blog.css">
 
 
     <style>
+<<<<<<< HEAD
         /* hero setion */
         .hero-section-blog {
             background-image: url('./assets/images/hero-section-img-blog.png');
@@ -233,46 +236,78 @@
         Petit écran PC : 1024 – 1279px
         Tablette : 768 – 1023px
         Mobile : ≤767px */
+=======
+>>>>>>> Blog
     </style>
-</haed>
+</head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <!-- hero setion  -->
+    <header class="header-hero-container">
+        <div class="header-content container">
+            <div class="header-top" style="align-items: center;">
+                <a href="#" class="faq">FAQ</a>
+                <img src="./assets/images/logo-eventify.png" alt="">
+                <div class="auth-buttons">
+                    <a href="#"><button>SIGN UP</button></a>
+                    <a href="#"><button>LOGIN</button></a>
+                </div>
+            </div>
+            <nav>
+                <!-- menu  -->
+                <div class="menu" id="menu">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a class="#">EVENTS</a></li>
+                    <li><a href="./Blog.html" style="color: red;">BLOG</a></li>
+                    <li><a>CONTACT</a></li>
+                    <li><a href="./FAQ.html" class="h-top">FQA</a></li>
+                    <li><a href="#" class="h-top">SIGN UP</a></li>
+                    <li><a href="#" class="h-top">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- hero section -->
         <section class="hero-section-blog">
             <h1>Blog</h1>
             <p>I should be incapable of drawing a single stroke at the present moment</p>
-            <button>let’s begin</button>
+            <a href="#first-section"><button>let’s begin</button></a>
         </section>
-        <!-- search sidebar  -->
-        <section class="sidebar-search">
-            <div class="input-search-sidebar">
-                <input type="text" placeholder="search">
-                <img src="./assets/images/search-icon.svg" alt="search-icon">
-            </div>
-            <div class="sidebar-categorie">
-                <h2>Catégories</h2>
-                <a href="#">Événements à venir</a>
-                <hr>
-                <a href="#">Événements passés</a>
-                <hr>
-                <a href="#">Conseils & Organisation</a>
-                <hr>
-                <a href="#">Tendances & Inspirations</a>
-                <hr>
-                <a href="#">Actualités</a>
-                <hr>
-            </div>
 
-        </section>
-        <section class="cartes">
-            <div class="one-cartes">
+    </header>
+    <main>
+
+        <section class="cartes container" id="first-section">
+            <!-- search sidebar  -->
+            <section class="sidebar-search">
+                <div class="input-search-sidebar">
+                    <input type="text" placeholder="search">
+                    <img src="./assets/images/search-icon.svg" alt="search-icon">
+                </div>
+                <div class="sidebar-categorie">
+                    <h2>Catégories</h2>
+                    <a href="#">Événements à venir</a>
+                    <hr>
+                    <a href="#">Événements passés</a>
+                    <hr>
+                    <a href="#">Conseils & Organisation</a>
+                    <hr>
+                    <a href="#">Tendances & Inspirations</a>
+                    <hr>
+                    <a href="#">Actualités</a>
+                    <hr>
+                </div>
+            </section>
+            <!-- LES CARTES -->
+            <div class="one-cartes first-carte">
                 <img src="./assets/images/img-carte-1.png" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -280,7 +315,8 @@
             <div class="one-cartes carte-full-width ">
                 <img src="./assets/images/blog-img-carte.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -288,7 +324,8 @@
             <div class="one-cartes">
                 <img src="./assets/images/blog-img-carte1.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -296,7 +333,8 @@
             <div class="one-cartes">
                 <img src="./assets/images/blog-img-carte2.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -304,17 +342,24 @@
             <div class="one-cartes carte-full-width">
                 <img src="./assets/images/blog-img-carte3.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
 
+<<<<<<< HEAD
             <!-- Button All Blogs -->
             <button class="btn-all-blogs">View all Blogs</button>
 
 
 
         </section>
+=======
+        </section>
+        <!-- Button All Blogs -->
+        <button class="btn-all-blogs">View all Blogs</button>
+>>>>>>> Blog
         <div class="div-hr-blog">
             <hr class="hr-blog">
         </div>
@@ -343,6 +388,7 @@
     </main>
     <footer></footer>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
