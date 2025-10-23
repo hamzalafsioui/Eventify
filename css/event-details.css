@@ -468,4 +468,27 @@ footer {
     top: 6%;
     right: 5%;
   }
+   
+  /*  footer */
+  .footer-opinion{
+    display: none;
+  }
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-socials{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -60%;
+  }
+  .footer-socials img {
+    width: 70px;
+  }
+  .footer-eventify p{
+    min-width: 300px;
+    margin-left: -100%;
+  }
 }
