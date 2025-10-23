@@ -1,278 +1,85 @@
 <!doctype html>
 <html>
-<haed>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/Blog.css">
 
-    
+
     <style>
-        /* hero setion */
-        .hero-section-blog {
-            background-image: url('./assets/images/hero-section-img-blog.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            height: 16.563em;
-            color: #fff;
-            text-align: center;
-            padding-top: 2em;
-            margin-bottom: 4em;
-        }
-
-        .hero-section-blog h1 {
-            font-style: italic;
-            font-family: 'Playfair Display';
-        }
-
-        .hero-section-blog button {
-            width: 6.875em;
-            height: 1.875em;
-            background-color: #961F1F;
-            border-radius: 3.125em;
-            color: #fff;
-            border: none;
-
-        }
-
-        /* search sidebar */
-        .sidebar-search {
-            width: 21.188em;
-            height: 30.688em;
-            border-radius: 0.5em;
-            box-shadow: 2px 2px 7px rgb(102 102 102 / 27%);
-            margin: 0 auto;
-        }
-
-        .input-search-sidebar {
-            /* margin-top: -6em; */
-            /* margin-bottom: 4em; */
-            position: relative;
-        }
-
-        .input-search-sidebar input {
-            width: 16.125em;
-            height: 2.938em;
-            border-radius: 0.938em;
-            border: none;
-            background-color: #555555;
-            color: #fff;
-            /* position: relative; */
-            padding: 0px 1em;
-            margin: 4.5em;
-        }
-
-        .input-search-sidebar input::placeholder {
-            color: #fff;
-        }
-
-        /* icon search */
-        .input-search-sidebar img {
-            position: absolute;
-            /* top: 24.9em; */
-            /* left: 16.7em; */
-
-            top: 4.5em;
-            left: 15.4em;
-
-            /* left: 28.4em; */
-            width: 1em;
-        }
-
-        /* categorie */
-        .sidebar-categorie h2 {
-            text-align: center;
-            margin-top: -1em;
-            margin-bottom: 1em;
-        }
-
-        .sidebar-categorie a,
-        hr {
-            margin: 0.9em 2em;
-        }
-
-        .sidebar-categorie a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .sidebar-categorie hr {
-            color: rgba(255, 255, 255, 0.31);
-        }
-
-        /* cartes */
-        .cartes {
-            margin-top: 5em;
-            margin-top: 5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .one-cartes {
-            width: 21.188em;
-            height: 33.5em;
-
-        }
-
-        .one-cartes img {
-            width: 21.313em;
-            height: 18.625em;
-        }
-
-        .one-cartes h2 {
-            font-family: 'lato';
-            font-size: 0.875em;
-            font-weight: 400;
-        }
-
-        .one-cartes button {
-            border: none;
-            border-radius: 0.9375em;
-            color: #fff;
-            background-color: #961F1F;
-            width: 9.375em;
-            height: 2.9375em;
-            margin-top: 1em;
-        }
-
-        /* Button All Blogs */
-        .btn-all-blogs {
-            width: 14.375em;
-            height: 2.8125em;
-            border: none;
-            background-color: #961F1F;
-            color: #fff;
-        }
-
-        /* hr => line */
-        .hr-blog {
-            width: 18em;
-            /* height: 0.5px; */
-            /* background-color: #bdbdbd00; */
-            margin: 4em 0px;
-        }
-
-        .sponsor-blog-section {
-            width: 24.5em;
-            height: 18.375em;
-            border: solid 1px rgba(150, 31, 31, 0.43);
-            border-radius: 0.875em;
-            margin: 0 auto;
-            padding: 1em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-        }
-
-        .sponsor-blog-section img {
-            border-radius: 12em;
-            width: 80px;
-        }
-
-        .div-hr-blog {
-            display: flex;
-            justify-content: center;
-        }
-
-        .iframe-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 1em;
-
-        }
-
-        .iframe-blog {
-            width: 24.5em;
-            height: 18.375em;
-            border-radius: 4px;
-        }
-
-        /* Tablette */
-        @media (min-width:768px)and (max-width:1023px) {
-            .sidebar-search {
-                float: right;
-            }
-
-            .cartes {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(27em, auto));
-                margin-left: 1em;
-            }
-
-            .carte-full-width {
-                width: 100%;
-                max-width: 600px;
-                grid-column: 1 / 3;
-                margin: 0 auto;
-            }
-
-            .carte-full-width img {
-                width: 100%;
-            }
-            .btn-all-blogs{
-                    grid-column: 1 / 4;
-                            margin: 0 auto;
-            }
-            .hr-blog{
-                margin: 0 auto;
-            }
-        }
-
-        @media (min-width:1024px)and (max-width:1279px) {}
-
-        @media (min-width:1280px) {}
-
-
-        /* Grand écran PC : ≥1280px
-        Petit écran PC : 1024 – 1279px
-        Tablette : 768 – 1023px
-        Mobile : ≤767px */
     </style>
-</haed>
+</head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <!-- hero setion  -->
+    <header class="header-hero-container">
+        <div class="header-content container">
+            <div class="header-top" style="align-items: center;">
+                <a href="#" class="faq">FAQ</a>
+                <img src="./assets/images/logo-eventify.png" alt="">
+                <div class="auth-buttons">
+                    <a href="#"><button>SIGN UP</button></a>
+                    <a href="#"><button>LOGIN</button></a>
+                </div>
+            </div>
+            <nav>
+                <!-- menu  -->
+                <div class="menu" id="menu">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a class="#">EVENTS</a></li>
+                    <li><a href="./Blog.html" style="color: red;">BLOG</a></li>
+                    <li><a>CONTACT</a></li>
+                    <li><a href="./FAQ.html" class="h-top">FQA</a></li>
+                    <li><a href="#" class="h-top">SIGN UP</a></li>
+                    <li><a href="#" class="h-top">LOGIN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- hero section -->
         <section class="hero-section-blog">
             <h1>Blog</h1>
             <p>I should be incapable of drawing a single stroke at the present moment</p>
-            <button>let’s begin</button>
+            <a href="#first-section"><button>let’s begin</button></a>
         </section>
-        <!-- search sidebar  -->
-        <section class="sidebar-search">
-            <div class="input-search-sidebar">
-                <input type="text" placeholder="search">
-                <img src="./assets/images/search-icon.svg" alt="search-icon">
-            </div>
-            <div class="sidebar-categorie">
-                <h2>Catégories</h2>
-                <a href="#">Événements à venir</a>
-                <hr>
-                <a href="#">Événements passés</a>
-                <hr>
-                <a href="#">Conseils & Organisation</a>
-                <hr>
-                <a href="#">Tendances & Inspirations</a>
-                <hr>
-                <a href="#">Actualités</a>
-                <hr>
-            </div>
 
-        </section>
-        <section class="cartes">
-            <div class="one-cartes">
+    </header>
+    <main>
+
+        <section class="cartes container" id="first-section">
+            <!-- search sidebar  -->
+            <section class="sidebar-search">
+                <div class="input-search-sidebar">
+                    <input type="text" placeholder="search">
+                    <img src="./assets/images/search-icon.svg" alt="search-icon">
+                </div>
+                <div class="sidebar-categorie">
+                    <h2>Catégories</h2>
+                    <a href="#">Événements à venir</a>
+                    <hr>
+                    <a href="#">Événements passés</a>
+                    <hr>
+                    <a href="#">Conseils & Organisation</a>
+                    <hr>
+                    <a href="#">Tendances & Inspirations</a>
+                    <hr>
+                    <a href="#">Actualités</a>
+                    <hr>
+                </div>
+            </section>
+            <!-- LES CARTES -->
+            <div class="one-cartes first-carte">
                 <img src="./assets/images/img-carte-1.png" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -280,7 +87,8 @@
             <div class="one-cartes carte-full-width ">
                 <img src="./assets/images/blog-img-carte.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -288,7 +96,8 @@
             <div class="one-cartes">
                 <img src="./assets/images/blog-img-carte1.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -296,7 +105,8 @@
             <div class="one-cartes">
                 <img src="./assets/images/blog-img-carte2.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
@@ -304,18 +114,27 @@
             <div class="one-cartes carte-full-width">
                 <img src="./assets/images/blog-img-carte3.jpg" alt="">
                 <h2>lorem abcat</h2>
-                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's
                     standard dummy text ever since the 1500s, when an unknown</p>
                 <button>read more</button>
             </div>
 
+<<<<<<< HEAD
             <!-- Button All Blogs -->
             <button class="btn-all-blogs">View all Blogs</button>
 
-            
+
 
         </section>
-        <hr class="hr-blog">
+=======
+        </section>
+        <!-- Button All Blogs -->
+        <button class="btn-all-blogs">View all Blogs</button>
+>>>>>>> Blog
+        <div class="div-hr-blog">
+            <hr class="hr-blog">
+        </div>
         <section class="sponsor-blog-section">
             <div>
                 <img src="./assets/images/Google.png" alt="google">
@@ -341,6 +160,7 @@
     </main>
     <footer></footer>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

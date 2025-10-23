@@ -1,12 +1,18 @@
 :root {
-    --red-color: #961F1F;
-    --gray-color: #4F4F4F;
-    --main-font: 'lato';
+    --red-color: #961f1f;
+    --gray-color: #4f4f4f;
+    --main-font: "lato";
+    --header-font: "playfair";
 }
 
 @font-face {
-    font-family: 'lato';
-    src: url("../assets/fonts/Lato/Lato-Regular.ttf");
+    font-family: "lato";
+    src: url('/assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: "playfair";
+    src: url("assets/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 
 * {
@@ -37,244 +43,448 @@ h1 {
     font-family: var(--main-font);
 }
 
-@media screen and (max-width:767px) {
+.text-center {
+    text-align: center;
+}
 
-    /*--------------------------section 1 faq question-------------------------*/
-    .section_faq_question {
-        text-align: center;
-        padding: 5%;
+.bg-efede0 {
+    background-color: #EFEDE0;
+}
+
+.round-50 {
+    border-radius: 50%;
+}
+
+/* ===============================header==================================*/
+header {
+    padding: 10%;
+}
+
+section .title-section {
+    font-family: var(--header-font);
+    font-style: italic;
+    margin: 30px;
+    font-size: 50px;
+}
+
+section .para_section {
+    margin-bottom: 2%;
+}
+
+/* ==============================hero section==================================*/
+.hero_section {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.hero_section h4 {
+    color: #53686A;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero_section h2 {
+    color: #73A58B;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero_section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero_section input {
+    font-size: 20px;
+    border-radius: 8px;
+    width: 50%;
+    padding: 1%;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* ===============================section faq==================================*/
+.section_faq_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.cards_faq {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 4%;
+}
+
+
+.cards_faq .card {
+        background-color: transparent;
+        text-align: start;
+        border-radius: 0px;
+        padding: 7%;
     }
 
-    .section_faq_question .cards_faq {
-        display: grid;
-        flex-direction: column;
-        gap: 30px;
+
+.more_question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #EFEDE0;
+    color: black;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+.more_question a {
+    background-color: #53686A;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.more_question div {
+    text-align: start;
+}
+
+/* ===============================section search==================================*/
+.section_search_faq_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.container_search {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.container_search input {
+    width: 60%;
+    padding: 1.5%;
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container_search button {
+    width: 15%;
+    padding: 1.3%;
+    border-radius: 10px;
+}
+
+.result_search {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.result_search .accordin {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result_search .panel {
+    text-align: start;
+}
+.panel{
+    display: none;
+}
+
+/* ===============================section google map==================================*/
+.section_faq_google_map {
+    text-align: center;
+    padding: 5%;
+    height: 500px;
+    margin-bottom: 70px;
+}
+
+.section_faq_google_map .map {
+    width: 100%;
+    height: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ===============================poser question==================================*/
+.section_faq_poser_question {
+    text-align: center;
+    padding: 5%;
+}
+
+.section_faq_poser_question .group_form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section_faq_poser_question .group_form label {
+    text-align: start;
+}
+
+.section_faq_poser_question .group_form input,
+.section_faq_poser_question textarea {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: start;
+}
+
+.section_faq_poser_question button {
+    width: 60%;
+    padding: 1.5%;
+    border-radius: 50px;
+    background-color: #3A5B22;
+    color: white;
+}
+
+/* ===============================brands==================================*/
+.section_brands {
+    text-align: center;
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.container_Brands {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFEDE0;
+    border-radius: 50%;
+}
+.cercle:hover{
+    background-color: #961f1f;
+}
+.cercle:hover img{
+    background-color: #51ff00;
+}
+
+.cercle img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+/* ===============================section subscribe==================================*/
+.section_Subscribe {
+    text-align: center;
+    width: 100%;
+}
+
+.send_subscribe_email {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+}
+.send_subscribe_email h2{
+    font-size: 30px;
+}
+.gorm_group_subscribe{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    height: 10%;
+    
+}
+.send_subscribe_email{
+    font-size: 30px;
+    font-family: var(--main-font);
+}
+
+.send_subscribe_email .gorm_group_subscribe input {
+    width: 60%;
+    height: 100%;
+    padding: 2.7%;
+    background-color:#EBEBEB ;
+    border: none;
+}
+
+.send_subscribe_email .gorm_group_subscribe button {
+    border-radius: 0%;
+    width: 20%;
+    height: 100%;
+    padding: 2%;
+}
+.section_Subscribe h4{
+    font-size: 40px;
+    padding: 5%;
+}
+
+.container_subscribe_Brands {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: 150px;
+    column-gap: 5%;
+    justify-content: center;
+    margin: 2% 0%;
+}
+
+.container_subscribe_Brands .cercle {
+    background-color: #EFEDE0;
+}
+
+/* ===============================footer==================================*/
+footer {
+    background-color: #4F4F4F;
+    text-align: center;
+}
+
+.container_footer {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10%;
+    justify-content: center;
+}
+
+.container_footer_Brands {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 50px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer_card ul {
+    list-style-type: none;
+}
+
+.footer_card ul li a {
+    text-decoration: none;
+    color: #EFEDE0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* ===============================responsive mobile==================================*/
+@media screen and (max-width: 767px) {
+
+    .hero_section h4 {
+        font-size: 20px;
+    }
+
+    .hero_section h2 {
+        font-size: 40px;
+    }
+
+    .hero_section h3 {
+        font-size: 20px;
+    }
+
+    .cards_faq {
+        grid-template-columns: 1fr;
         margin-bottom: 10%;
     }
 
-    .section_faq_question .cards_faq .card {
+    .more_question {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .cards_faq .card {
+        text-align: center;
         background-color: #3C3939;
         border-radius: 20px;
         padding: 7%;
     }
 
-    .section_faq_question .more_question {
-        display: flex;
-        flex-direction: column;
-        column-gap: 10px;
-        background-color: #EFEDE0;
-        color: black;
-        border-radius: 20px;
-        padding: 5%;
-
-    }
-
-    .section_faq_question .more_question a {
-        background-color: #53686A;
-        color: white;
-        padding: 3%;
-    }
-
-    /*--------------------section 2 search -------------------*/
-    .section_search_faq_question {
-        text-align: center;
-        padding: 5%;
-    }
-
-    .section_search_faq_question .container_search {
-        width: 100%;
-        margin-bottom: 10%;
-
-    }
-
-    .section_search_faq_question .container_search input {
+    .container_search input {
         width: 75%;
         padding: 3%;
-        padding-left: 25px;
-        background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
-        background-size: 20px;
-        background-color: white;
-
+    }
+    .result_search {
+        width: 100%;
     }
 
-    .section_search_faq_question .container_search button {
+    .container_search button {
         width: 24%;
         padding: 3%;
         border-radius: 50px;
     }
 
-    .section_search_faq_question .result_search {
-        width: 100%;
-    }
-
-    .section_search_faq_question .result_search .accordin {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .section_search_faq_question .result_search .panel {
-        text-align: start;
-    }
-
-    /*--------------------- section carte google map-------------------*/
     .section_faq_google_map {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .section_faq_google_map h2 {
-        margin-bottom: 20px;
-
-    }
-
-    .section_faq_google_map .map-responsive {
-        width: 100%;
-    }
-
-    /*---------------------------section poser question-------------------*/
-    .section_faq_poser_question {
-        text-align: center;
-        padding: 5%;
-    }
-
-    .section_faq_poser_question h2 {
-        margin-bottom: 20px;
+        margin-bottom: 300px;
     }
 
     .section_faq_poser_question .group_form {
-        display: flex;
-        flex-direction: column;
         width: 80%;
-        margin: 0% auto;
     }
 
-    .section_faq_poser_question .group_form label {
-        text-align: start;
-    }
-
-    .section_faq_poser_question .group_form input,
-    textarea {
-        background-color: transparent;
-        border: 1.5px solid white;
-        border-radius: 50px;
-        padding: 10px;
-        text-align: start;
-    }
-
-    .section_faq_poser_question .group_form.checkbox{
-        width: 100%;
-        display: flex;
-        flex-direction:row ;
-    }
-    .section_faq_poser_question button{
-        width: 80%;
-        padding: 3%;
-        border-radius: 50px;
-        background-color: #3C3939;
-        color: white;
-    }
-    /*--------------------section brands--------------------------*/
-    .section_brands{
-        text-align: center;
-        padding: 3%;
-        margin-bottom: 5%;
-    }
-    .section_brands .container_Brands{
-        width: 90%;
-        margin: 0% auto;
+    .container_Brands {
         display: grid;
-        grid-template-columns: 50px 50px;
-        justify-content: space-between;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 150px);
+        justify-content: space-around;
         row-gap: 20px;
-        grid-template-rows: 50px 50px 50px;
     }
-    .section_brands .container_Brands .cercle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #EFEDE0;
-        border-radius: 50%;
-    }
-    .section_brands .container_Brands .cercle img{
-        width: 90%;
-        background-color: #EFEDE0;
-        border-radius: 50%;
-    }
+    /*=================subscribe section=========================*/
     .section_Subscribe{
-       text-align: center; 
-       padding: 0%;
-       width: 100%;
-    }
-    .section_Subscribe .send_subscribe_email{
-        width: 100%;
-        
-
-    }
-    .section_Subscribe .send_subscribe_email input{
-        width: 65%;
-        padding: 5%;
-    }
-    .section_Subscribe .send_subscribe_email button{
-        padding: 5%;
+        padding: 0%;
     }
     .section_Subscribe h4{
-
+        font-size: 20px;
     }
-    .section_Subscribe .container_subscribe_Brands{
-        display: grid;
-        grid-template-columns: repeat(4,50px);
-        grid-template-rows: repeat(1,50px);
-        column-gap: 5%;
-        text-align: center;
-        justify-content: center;
-        margin:10% 0%;
+    .container_subscribe_Brands {
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: 70px;
+    }
+    .send_subscribe_email{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .send_subscribe_email h2{
+        font-size: 20px;
+    }
+    .send_subscribe_email .gorm_group_subscribe input {
         
     }
-    .section_Subscribe .container_subscribe_Brands .cercle{
-        background-color: #EFEDE0;
-        border-radius: 50%;
-    }
-    .section_Subscribe .container_subscribe_Brands .cercle img{
-        width: 90%;
-        background-color: #EFEDE0;
-        border-radius: 50%;
-    }
-    /*----------------------- section fotter--------------------*/
-    footer{
-        background-color: #4F4F4F;
-    }
-    .container_footer{
-        padding: 10%;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
-        row-gap: 10%;
-        justify-content: center;
-        text-align: center;
-    }
-    .container_footer:first-child  .container_footer_Brands{
-        display: grid;
-        grid-template-columns: repeat(3,50px);
-        grid-template-rows: repeat(1,50px);
-        gap:20px;
-        justify-content: center;
 
+    .send_subscribe_email .gorm_group_subscribe button {
+        border-radius: 0%;
+        width: 50%;
+        height: 100%;
+        padding: 2%;
     }
-    .container_footer:first-child  .container_footer_Brands  .cercle{
-        background-color: #EFEDE0;
-        border-radius: 50%;
-    }
-    .container_footer .footer_card ul{
-        list-style-type: none;
-        
-    }
-    .container_footer .footer_card ul li a{
-        text-decoration: none;
-        color: #EFEDE0;
+    .gorm_group_subscribe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
     }
     
-    .copyright{
-        text-align: center;
-    }
+
+
 }
-    
+
+/* ===============================responsive tablette==================================*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
