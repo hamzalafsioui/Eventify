@@ -1,10 +1,14 @@
-const menu = document.getElementById('menu');
-const navLinks = document.querySelector('.second-section-header');
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("nav-links");
+const heroMove= document.getElementById("hero-move");
+const aboutMove=document.getElementById("about-section");
 
-menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  navLinks.classList.toggle('active');
-});
+menu.addEventListener('click',function(){
+    menu.classList.toggle('menuActive');
+    navLinks.classList.toggle('active');
+    heroMove.classList.toggle('hero-active');
+    aboutMove.classList.toggle('about-active');
+})
 
 
 let heures = 12;
