@@ -290,6 +290,22 @@ body {
 
 /* Events cards*/
 
+.card{
+  border-radius: 30px;
+  width: 450px;
+  box-shadow: rgb(150 31 31) 0px 2px 4px 0px, rgb(150 31 31) 0px 2px 16px 0px;
+}
+.card-img{
+  overflow: hidden;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.card-img img{
+  transition: all 0.4s;
+}
+.card-img img:hover{
+  transform: scale(1.1);
+}
 .section-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -301,6 +317,7 @@ body {
 }
 
 .section-card p {
+  margin-left: 12px;
   color: #828282;
 }
 
@@ -325,8 +342,9 @@ body {
 
 @media (max-width:1023px) {
   .section-card img {
-    width: 350px;
+    width: 300px;
   }
+ 
   .card p {
     text-align: start;
   }
@@ -336,7 +354,7 @@ body {
   }
 
   .card {
-    width: 90%;                 
+    width: 300px;                
     margin: 0 auto;             
     text-align: center;         
   }
@@ -428,7 +446,6 @@ body {
 }
 
 /* ========================================================================================= */
-
 /* Footer */
 footer {
   margin-top: 2rem;
@@ -462,6 +479,10 @@ footer {
   margin-left: 10px;
   gap: 0.5rem;
 }
+.footer-nav a{
+  text-decoration: none;
+  color: #fff;
+}
 .footer-festival ul {
   display: flex;
   flex-direction: column;
@@ -487,9 +508,19 @@ footer {
   min-width: 350px;
   height: 60px;
   border-radius: 50px;
-  border: none;
-  outline: none;
   background-color: #6c6c6c;
+  outline: none;
+  border: none;
+  padding-left: 10%;
+  color: white;
+  font-style: italic;
+
+}
+.send-box input::placeholder{
+  color: white;
+  padding-left: 13%;
+  font-style: italic;
+  font-size: 1.rem;
 }
 .send-box button {
   position: absolute;
@@ -514,3 +545,42 @@ footer {
   text-align: center;
   margin: 2rem auto;
 }
+
+
+@media (max-width: 1024px) {
+/* footer */
+  .footer-festival h5,
+  .footer-opinion h5,
+  .footer-content h5 {
+    font-size: 30px;
+  }
+  .footer-socials img{
+  width: 50px;}
+}
+@media (max-width: 767px) {
+   /*  footer */
+  .footer-opinion{
+    display: none;
+  }
+  .footer-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-socials{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -60%;
+  }
+  .footer-socials img {
+    width: 70px;
+  }
+  .footer-eventify p{
+    min-width: 300px;
+    font-size: 0.80rem;
+    margin-left: -100%;
+  }
+}
+
+ 
