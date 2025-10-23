@@ -320,6 +320,9 @@ body {
   margin-left: 12px;
   color: #828282;
 }
+.section-card h3 {
+  margin-left: 12px;
+}
 
 .read {
   display: block;   
@@ -449,6 +452,7 @@ body {
 /* Footer */
 footer {
   margin-top: 2rem;
+  background-color: #262626;
 }
 .footer-content {
   display: flex;
@@ -537,13 +541,13 @@ footer {
 .footer-festival h5,
 .footer-opinion h5,
 .footer-content h5 {
-  font-family: var(--header-font);
+  font-family: "playfair";
   font-size: 50px;
 }
 
 .copy-right {
   text-align: center;
-  margin: 2rem auto;
+  padding: 2rem auto;
 }
 
 
