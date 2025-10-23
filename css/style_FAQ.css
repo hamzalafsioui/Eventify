@@ -420,6 +420,9 @@ footer {
         width: 75%;
         padding: 3%;
     }
+    .result_search {
+        width: 100%;
+    }
 
     .container_search button {
         width: 24%;
