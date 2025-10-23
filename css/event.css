@@ -126,13 +126,19 @@ body {
   font-family: 'playfair';
 }
 
+
 .title-hero-section,
 .text-hero-section {
   text-align: center;
+
 }
 
+.lien-FAQ{
+  text-decoration: none;
+  color: #fff;
+}
 .header-wraper {
-  background-image: url("../assets/images/hero-section.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.457)),url('../assets/images/hero-section.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -141,21 +147,15 @@ body {
   height: 100vh;
 }
 
-/* responsive mobile */
-
-@media (max-width:767px) {
+@media (max-width:1023px) {
   .menu {
     display: flex;
     position: absolute;
     top: 4%;
     right: 5%;
   }
-
   .btn-div {
     display: none;
-  }
-  .header-second-section{
-     background-color: black;
   }
   nav > ul{
     display: none !important;
@@ -181,7 +181,51 @@ body {
   }
 
   .hero-section {
-    margin-top: 25%;
+    margin-top: 10%;
+  }
+  .active {
+    display: flex !important;
+  }
+
+}
+/* responsive mobile */
+
+@media (max-width:767px) {
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 4%;
+    right: 5%;
+  }
+
+  .btn-div {
+    display: none;
+  }
+  nav > ul{
+    display: none !important;
+    flex-direction: column;
+    row-gap: 2px !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .FAQ {
+    display: none;
+  }
+  .h-top{
+  display: flex;
+  justify-content: center;
+}
+  .img-logo{
+    display: flex;
+    padding-left: 0;
+    margin-top: 2px;
+    width: 60px;
+  height: auto;
+  }
+
+  .hero-section {
+    margin-top: 10%;
   }
   .active {
     display: flex !important;
@@ -235,6 +279,7 @@ body {
 
 .div-events form select {
   padding: 10px 20px;
+  font-family: 'lato';
   color: white;
   text-align: center;
   background-color: #961F1F;
@@ -278,7 +323,7 @@ body {
 
 /* Responsive tablette */
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
   .section-card img {
     width: 350px;
   }
