@@ -2,8 +2,8 @@
   --red-color: #961f1f;
   --gray-color: #4f4f4f;
   --main-font: "lato";
-  --header-font: "Playfair", serif;
-  --timeOf-font: Fugaz-One;
+  --header-font: "Playfair";
+  --timeOf-font: "Fugaz-One";
 }
 
 @font-face {
@@ -40,8 +40,13 @@ body {
   overflow-x: hidden;
 }
 
+
+/* header section */
+
+
 .header-content,
 .home-hero-section {
+  
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -67,6 +72,8 @@ body {
   cursor: pointer;
 }
 nav ul {
+  margin-right:2rem ;
+  margin-top: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,13 +81,18 @@ nav ul {
 }
 nav ul li a,
 .h-top {
+  height: 100%;
   text-decoration: none;
   color: white;
-  margin-right: 1.5rem;
+  margin-right: 1.1rem;
   font-family: var(--main-font);
-  font-weight: 300;
+  font-size: 1.4rem;
   cursor: pointer;
   transition: all 0.4s;
+}
+.faq{
+  font-family: var(--main-font);
+  font-size: 1.4rem;
 }
 .h-top {
   display: none;
@@ -88,8 +100,8 @@ nav ul li a,
 .auth-buttons button {
   border: none;
   border-radius: 50px;
-  height: 3rem;
-  width: 9rem;
+
+  padding: 0.75rem 1.5rem;
   background-color: var(--red-color);
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
@@ -106,6 +118,8 @@ nav ul li a,
   box-shadow: 1px 1px 15px white;
   transform: translateY(-3px);
 }
+
+/* hero section  */
 
 .header-hero-container {
   height: 100vh;
@@ -132,19 +146,19 @@ nav ul li a,
 }
 h1 {
   font-family: var(--header-font);
-  font-size: 6rem;
+  font-size: 5rem;
   margin-left: 2rem;
 }
 .hero-move h5 {
   font-family: var(--main-font);
-  font-size: 3rem;
+  font-size: 2rem;
   margin-left: 7rem;
   letter-spacing: 1rem;
   font-weight: bold;
 }
 .hero-move h4 {
   margin-left: 9rem;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: var(--timeOf-font);
 }
 .hero-move button {
@@ -159,6 +173,8 @@ h1 {
   cursor: pointer;
 }
 
+/* about section  */
+
 .about-section {
   margin: 3rem;
   display: flex;
@@ -170,6 +186,8 @@ h1 {
   margin-right: auto;
 }
 .about-image-section {
+  margin-top: 2rem;
+  height: 90%;
   width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -213,6 +231,19 @@ h1 {
   font-size: 0.8rem;
   color: #828282;
 }
+.image-item{
+  overflow: hidden;
+}
+.image-item img ,
+.image-section-sponsor img{
+    transition: all 0.4s;
+}
+.image-item img:hover,
+.image-section-sponsor img:hover{
+  transform: scale(1.1);
+}
+
+/* events section  */
 
 .event-section {
   margin: 5rem 3rem;
@@ -267,6 +298,8 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* comments section  */
 
 .comments-setion {
   margin: 4rem 3rem;
@@ -325,6 +358,8 @@ h1 {
 .image-pousser {
   margin-left: 12rem;
 }
+
+/* footer section  */
 
 footer {
   margin-top: 2rem;
@@ -439,6 +474,8 @@ hr {
   padding: 1rem 0;
 }
 
+/* burgger menuu  */
+
 .menu {
   display: none;
   flex-direction: column;
@@ -453,6 +490,8 @@ hr {
   height: 2px;
   background-color: white;
 }
+
+/* tablette section  */
 
 @media (max-width: 1024px) {
   .menu {
@@ -573,7 +612,7 @@ hr {
 }
 
 
-
+/* mobile section  */
 
 @media (max-width: 767px) {
   h1{

@@ -54,6 +54,9 @@ h1 {
 .round-50 {
     border-radius: 50%;
 }
+hr{
+    font-size: 20px;
+}
 
 /* ===============================header==================================*/
 header {
@@ -350,40 +353,7 @@ section .para_section {
     background-color: #EFEDE0;
 }
 
-/* ===============================footer==================================*/
-footer {
-    background-color: #4F4F4F;
-    text-align: center;
-}
 
-.container_footer {
-    padding: 10%;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10%;
-    justify-content: center;
-}
-
-.container_footer_Brands {
-    display: grid;
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: 50px;
-    gap: 20px;
-    justify-content: center;
-}
-
-.footer_card ul {
-    list-style-type: none;
-}
-
-.footer_card ul li a {
-    text-decoration: none;
-    color: #EFEDE0;
-}
-
-.copyright {
-    text-align: center;
-}
 
 /* ===============================responsive mobile==================================*/
 @media screen and (max-width: 767px) {
@@ -429,6 +399,11 @@ footer {
         padding: 3%;
         border-radius: 50px;
     }
+    .result_search .accordin h3{
+        font-size: 13px;
+        max-width: 70%;
+        text-align: start;
+    }
 
     .section_faq_google_map {
         margin-bottom: 300px;
@@ -440,8 +415,8 @@ footer {
 
     .container_Brands {
         display: grid;
-        grid-template-columns: repeat(2, 150px);
-        grid-template-rows: repeat(3, 150px);
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(3, 100px);
         justify-content: space-around;
         row-gap: 20px;
     }
