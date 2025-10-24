@@ -145,6 +145,7 @@ section .para_section {
 }
 
 .more_question a {
+    text-decoration: none;
     background-color: #53686A;
     color: white;
     padding: 1%;
