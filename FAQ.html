@@ -29,12 +29,12 @@
                     <span class="menu-bar"></span>
                 </div>
                 <ul class="nav-links" id="nav-links">
-                    <li><a>HOME</a></li>
-                    <li><a>ABOUT</a></li>
-                    <li><a>EVENTS</a></li>
-                    <li><a>BLOG</a></li>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./index.html #about-section">ABOUT</a></li>
+                    <li><a href="./event.html">EVENTS</a></li>
+                    <li><a href="./Blog.html">BLOG</a></li>
                     <li><a>CONTACT</a></li>
-                    <li><a href="#" class="h-top">FAQ</a></li>
+                    <li><a href="./FAQ.html" class="h-top">FQA</a></li>
                     <li><a href="#" class="h-top">SIGN UP</a></li>
                     <li><a href="#" class="h-top">LOGIN</a></li>
                 </ul>
@@ -51,45 +51,52 @@
 
     <main>
         <hr>
-        <section class="section_faq_question">
+        <section class="section_faq_question" id="section_faq">
             <h2 class="title-section">Frequently Asked Questions</h2>
-            <p class="para_section">Découvrez les réponses aux questions les plus fréquentes concernant nos événements, inscriptions, paiements et bien plus encore.</p>
+            <p class="para_section">Découvrez les réponses aux questions les plus fréquentes concernant nos événements,
+                inscriptions, paiements et bien plus encore.</p>
 
             <div class="cards_faq">
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Comment puis-je m'inscrire à un événement sur Eventify ?</h3>
-                    <p>Vous pouvez parcourir les événements disponibles dans la section “Events” puis cliquer sur “Participer”. Ensuite, créez un compte ou connectez-vous pour finaliser votre inscription.</p>
+                    <p>Vous pouvez parcourir les événements disponibles dans la section “Events” puis cliquer sur
+                        “Participer”. Ensuite, créez un compte ou connectez-vous pour finaliser votre inscription.</p>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Comment recevoir une confirmation d’inscription ?</h3>
-                    <p>Une fois l’inscription validée, vous recevrez un email automatique avec tous les détails de l’événement et un QR code d’accès.</p>
+                    <p>Une fois l’inscription validée, vous recevrez un email automatique avec tous les détails de
+                        l’événement et un QR code d’accès.</p>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Puis-je modifier ou annuler ma participation ?</h3>
-                    <p>Oui. Accédez à votre profil, puis ouvrez la section “Mes événements”. Vous pourrez modifier ou annuler votre réservation avant la date limite indiquée.</p>
+                    <p>Oui. Accédez à votre profil, puis ouvrez la section “Mes événements”. Vous pourrez modifier ou
+                        annuler votre réservation avant la date limite indiquée.</p>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Quels types d’événements sont disponibles ?</h3>
-                    <p>Eventify propose des concerts, conférences, festivals, ateliers et webinaires. Vous pouvez filtrer par catégorie et par ville pour trouver ce qui vous convient.</p>
+                    <p>Eventify propose des concerts, conférences, festivals, ateliers et webinaires. Vous pouvez
+                        filtrer par catégorie et par ville pour trouver ce qui vous convient.</p>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Comment contacter les organisateurs ?</h3>
-                    <p>Chaque événement contient une section “Contact Organisateur” avec un bouton de message direct ou un email de contact.</p>
+                    <p>Chaque événement contient une section “Contact Organisateur” avec un bouton de message direct ou
+                        un email de contact.</p>
                 </div>
 
                 <div class="card">
                     <img src="assets/images/icon_FAQ_1.png" alt="icon">
                     <h3>Les événements sont-ils gratuits ?</h3>
-                    <p>Certains événements sont gratuits, d’autres payants. Les informations sur le tarif et les options de paiement sont disponibles sur la fiche de chaque événement.</p>
+                    <p>Certains événements sont gratuits, d’autres payants. Les informations sur le tarif et les options
+                        de paiement sont disponibles sur la fiche de chaque événement.</p>
                 </div>
             </div>
 
@@ -104,14 +111,15 @@
 
         <hr>
 
-        <section class="section_search_faq_question">
+        <section class="section_search_faq_question" id="section_search">
             <h2 class="title-section">Search for frequently asked questions</h2>
-            <p class="para_section">Trouvez des réponses rapides sur la billetterie, la création d’événements, la géolocalisation et la gestion de votre compte.</p>
+            <p class="para_section">Trouvez des réponses rapides sur la billetterie, la création d’événements, la
+                géolocalisation et la gestion de votre compte.</p>
 
-            <form class="container_search">
-                <input type="text" placeholder="Search for question">
-                <button>Search</button>
-            </form>
+            <div class="container_search">
+                <input type="text" placeholder="Search for question" id="search">
+                <button id="btn-search">Search</button>
+            </div>
 
             <div class="result_search">
                 <div class="accordin">
@@ -119,7 +127,8 @@
                     <img src="assets/images/icon_FAQ_plus.png" alt="icon_explore">
                 </div>
                 <div class="panel">
-                    <p>Utilisez la barre de recherche avec le nom de votre ville ou activez la géolocalisation pour afficher les événements les plus proches.</p>
+                    <p>Utilisez la barre de recherche avec le nom de votre ville ou activez la géolocalisation pour
+                        afficher les événements les plus proches.</p>
                 </div>
 
                 <div class="accordin">
@@ -127,7 +136,8 @@
                     <img src="assets/images/icon_FAQ_plus.png" alt="icon_explore">
                 </div>
                 <div class="panel">
-                    <p>Oui, chaque événement comporte des boutons de partage vers Facebook, Instagram, LinkedIn et Twitter.</p>
+                    <p>Oui, chaque événement comporte des boutons de partage vers Facebook, Instagram, LinkedIn et
+                        Twitter.</p>
                 </div>
 
                 <div class="accordin">
@@ -135,7 +145,8 @@
                     <img src="assets/images/icon_FAQ_plus.png" alt="icon_explore">
                 </div>
                 <div class="panel">
-                    <p>Si vous êtes organisateur, connectez-vous et accédez à la section “Créer un événement”. Remplissez les informations (titre, lieu, date, image) et publiez.</p>
+                    <p>Si vous êtes organisateur, connectez-vous et accédez à la section “Créer un événement”.
+                        Remplissez les informations (titre, lieu, date, image) et publiez.</p>
                 </div>
 
                 <div class="accordin">
@@ -143,7 +154,8 @@
                     <img src="assets/images/icon_FAQ_plus.png" alt="icon_explore">
                 </div>
                 <div class="panel">
-                    <p>Eventify accepte les paiements par carte bancaire, PayPal et virement. Certains organisateurs offrent aussi le paiement sur place (COD).</p>
+                    <p>Eventify accepte les paiements par carte bancaire, PayPal et virement. Certains organisateurs
+                        offrent aussi le paiement sur place (COD).</p>
                 </div>
             </div>
         </section>
@@ -151,47 +163,55 @@
 
         <section class="section_faq_google_map">
             <h2 class="title-section">Carte Google Map</h2>
-            <p class="para_section">Consultez la localisation de nos principaux événements à travers le monde et trouvez ceux les plus proches de vous.</p>
+            <p class="para_section">Consultez la localisation de nos principaux événements à travers le monde et trouvez
+                ceux les plus proches de vous.</p>
             <div class="map">
-                <iframe src="https://www.google.com/maps?q=48.8566,2.3522&z=14&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps?q=48.8566,2.3522&z=14&output=embed" allowfullscreen
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <hr>
 
         <section class="section_faq_poser_question">
             <h2 class="title-section">Poser votre question</h2>
-            <p class="para_section">Posez votre question à notre équipe — qu’il s’agisse d’un problème d’inscription, de paiement ou de participation à un événement. Nous vous répondrons dans les 24 heures.</p>
+            <p class="para_section">Posez votre question à notre équipe — qu’il s’agisse d’un problème d’inscription, de
+                paiement ou de participation à un événement. Nous vous répondrons dans les 24 heures.</p>
 
-            <form class="form_poser_question">
+            <form class="form_poser_question" id="form-question">
                 <div class="group_form">
                     <label for="Name_input">Name</label>
                     <input type="text" id="Name_input" placeholder="Your Name">
+                    <p id="validation-nom" style="color: brown;"></p>
                 </div>
                 <div class="group_form">
                     <label for="Prenom">Prenom</label>
                     <input type="text" id="Prenom_input" placeholder="Your Prenom">
+                    <p id="validation-prenom" style="color: brown;"></p>
                 </div>
                 <div class="group_form">
                     <label for="Email_input">Email</label>
-                    <input type="text" id="Email_input" placeholder="Your email">
+                    <input type="email" id="Email_input" placeholder="Your email">
+                    <p id="validation-email" style="color: brown;"></p>
                 </div>
                 <div class="group_form">
                     <label for="Question_input">Question</label>
                     <textarea type="text" id="Question_input" placeholder="Your question"></textarea>
+                    <p id="validation-question" style="color: brown;"></p>
                 </div>
                 <div class="group_form_checkbox">
                     <input type="checkbox">
                     <label>Agree for les conditions</label>
                 </div>
 
-                <button>send votre question</button>
+                <button id="btn-submit">send votre question</button>
             </form>
         </section>
         <hr>
 
         <section class="section_brands">
             <h2 class="title-section">Join these brands</h2>
-            <p class="para_section">Nos partenaires et sponsors soutiennent les plus grands événements organisés sur Eventify. Rejoignez-les dès aujourd’hui !</p>
+            <p class="para_section">Nos partenaires et sponsors soutiennent les plus grands événements organisés sur
+                Eventify. Rejoignez-les dès aujourd’hui !</p>
             <div class="container_Brands">
                 <div class="cercle"><img src="/assets/images/twitter icon.png" alt="icon twitter"></div>
                 <div class="cercle"><img src="/assets/images/facebook icon.png" alt="icon facebook"></div>
@@ -211,56 +231,59 @@
                     <button>Subscribe</button>
                 </div>
             </div>
-            <h4>2017 Copyright information goes here.</h4>
-            <div class="container_subscribe_Brands">
-                <div class="cercle"><img src="assets/images/discord icon colorer.png" alt=""></div>
-                <div class="cercle"><img src="assets/images/spotify icon colorer.png" alt=""></div>
-                <div class="cercle"><img src="assets/images/google icon colorer.png" alt=""></div>
-                <div class="cercle"><img src="assets/images/spotify icon colorer.png" alt=""></div>
+            <div class="container-brand-title">
+                <h4>2017 Copyright information</h4>
+                <div class="container_subscribe_Brands">
+                    <div class="cercle"><img src="assets/images/discord icon colorer.png" alt=""></div>
+                    <div class="cercle"><img src="assets/images/spotify icon colorer.png" alt=""></div>
+                    <div class="cercle"><img src="assets/images/google icon colorer.png" alt=""></div>
+                    <div class="cercle"><img src="assets/images/spotify icon colorer.png" alt=""></div>
+                </div>
+                <h4>Designed by Mouhsine</h4>
             </div>
-            <h4>Designed by Mouhsine</h4>
+
         </section>
     </main>
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-eventify">
-          <h5>Eventify</h5>
-          <p>
-            A wonderful serenity has taken possession of my ntire s oul, like
-            these sweet mornings of spring which Injoy with
-          </p>
-          <div class="footer-socials">
-            <img src="./assets/images/linkedin.png" alt="">
-            <img src="./assets/images/facebook.png" alt="" >
-            <img src="./assets/images/twitter.png" alt="">
-          </div>
-        </div>
-        <div class="footer-festival">
-          <h5>Festival</h5>
+        <div class="footer-content">
+            <div class="footer-eventify">
+                <h5>Eventify</h5>
+                <p>
+                    A wonderful serenity has taken possession of my ntire s oul, like
+                    these sweet mornings of spring which Injoy with
+                </p>
+                <div class="footer-socials">
+                    <img src="./assets/images/linkedin.png" alt="linkedin con">
+                    <img src="./assets/images/facebook.png" alt="facebook icon">
+                    <img src="./assets/images/twitter.png" alt="twitter icon">
+                </div>
+            </div>
+            <div class="footer-festival">
+                <h5>Festival</h5>
 
-          <div class="footer-nav">
-            <a>Home</a>
-            <a>ABOUT</a>
-            <a>EVENTS</a>
-            <a>BLOG</a>
-            <a>CONTACT</a>
-            <a>FQA</a>
-          </div>
+                <div class="footer-nav">
+                    <a href="./index.html">Home</a>
+                    <a href="./index.html #about-section">ABOUT</a>
+                    <a href="./event.html">EVENTS</a>
+                    <a href="./Blog.html">BLOG</a>
+                    <a>CONTACT</a>
+                    <a href="./FAQ.html">FQA</a>
+                </div>
+            </div>
+            <div class="footer-opinion">
+                <h5>type your opinion</h5>
+                <div class="send-box">
+                    <input type="text" placeholder="Type here ..." />
+                    <a href=""><button>share now</button></a>
+                </div>
+                <p>
+                    A wonderful serenity has taken possession of my ntire s oul, like
+                </p>
+            </div>
         </div>
-        <div class="footer-opinion">
-          <h5>type your opinion</h5>
-          <div class="send-box">
-            <input type="text" placeholder="Type here ..." />
-            <a href=""><button>share now</button></a>
-          </div>
-          <p>
-            A wonderful serenity has taken possession of my ntire s oul, like
-          </p>
-        </div>
-      </div>
-      <hr class="container" />
-      <p class="copy-right">Copyright &copy; 2025 youcode</p>
+        <hr class="container" />
+        <p class="copy-right">Copyright &copy; 2025 youcode</p>
     </footer>
 
     <script src="js/script.js"></script>

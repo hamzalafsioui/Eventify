@@ -90,8 +90,8 @@ body {
 }
 
 .img-logo {
-  width: 300px;
-  height: 150px;
+  width: 200px;
+  height: auto;
   padding-left: 10%;
 }
 
@@ -110,9 +110,16 @@ body {
 
 .header-second-section ul li a {
   text-decoration: none;
+  font-size: 20px;
   color: white;
+   font-weight: 300;
+    transition: all 0.4s;
 }
 
+.nav-links a:hover{
+  color: var(--red-color);
+  font-weight: 600;
+}
 .header-second-section ul {
   display: flex;
   gap: 18px;
@@ -135,7 +142,11 @@ body {
 
 .lien-FAQ{
   text-decoration: none;
+  transition: all 0.4s;
   color: #fff;
+}
+.lien-FAQ:hover{
+color: var(--red-color);
 }
 .header-wraper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.457)),url('../assets/images/hero-section.jpg');
@@ -320,6 +331,9 @@ body {
   margin-left: 12px;
   color: #828282;
 }
+.section-card h3 {
+  margin-left: 12px;
+}
 
 .read {
   display: block;   
@@ -435,6 +449,35 @@ body {
    display: none;
 }
 }
+.title-event-past,
+.title-event-future {
+  font-weight: 700;
+  color: #f5f5f5;
+  background: linear-gradient(
+    to right,
+    #ccc 0%,
+    #ffffff 50%,
+    #ccc 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shine-center 0.8s ease-in-out infinite;
+  text-align: center;
+}
+
+/* Animation lumineuse centrée et pulsante */
+@keyframes shine-center {
+  0%, 100% {
+    background-position: center;
+    opacity: 0.8;
+  }
+  50% {
+    background-position: center;
+    opacity: 3;
+  }
+}
+
 
 /* ========================================================================================= */
 
@@ -449,6 +492,7 @@ body {
 /* Footer */
 footer {
   margin-top: 2rem;
+  background-color: #262626;
 }
 .footer-content {
   display: flex;
@@ -537,13 +581,13 @@ footer {
 .footer-festival h5,
 .footer-opinion h5,
 .footer-content h5 {
-  font-family: var(--header-font);
+  font-family: "playfair";
   font-size: 50px;
 }
 
 .copy-right {
   text-align: center;
-  margin: 2rem auto;
+  padding: 2rem auto;
 }
 
 
@@ -577,7 +621,7 @@ footer {
     width: 70px;
   }
   .footer-eventify p{
-    min-width: 300px;
+    min-width: 260px;
     font-size: 0.80rem;
     margin-left: -100%;
   }
