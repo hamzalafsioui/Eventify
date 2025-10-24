@@ -45,7 +45,7 @@ Le style global du site repose sur une palette sombre contrastée par des accent
 
 ## ⚙️ Scripts JavaScript
 
-### 🍔 Menu hamburger
+### Menu hamburger
 Le menu responsive permet d’ouvrir/fermer la navigation sur mobile.
 
 ```js
@@ -58,7 +58,7 @@ menu.addEventListener('click', function() {
 });
 ```
 
-### ❓ FAQ interactive
+### FAQ interactive
 Chaque question peut être développée ou refermée individuellement grâce à un effet d’accordéon.
 
 ```js
@@ -88,7 +88,6 @@ for (i = 0; i < acc.length; i++) {
 ├── 📁 assets/
 │   ├── 📁 fonts/
 │   ├── 📁 images/
-│   └── 📁 icons/
 │
 ├── 📁 css/
 │   └── style.css
