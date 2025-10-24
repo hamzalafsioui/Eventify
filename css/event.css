@@ -59,7 +59,9 @@ body {
 }
 
 .FAQ {
-  margin-left: 30px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 40px;
 }
 
 .div-logo {
@@ -74,7 +76,7 @@ body {
 }
 
 .btn-div {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .btn-div button {
@@ -83,9 +85,15 @@ body {
   padding: 10px 30px;
   background-color: #961F1F;
 }
+.btn-div button:hover{
+  box-shadow: 1px 1px 15px white;
+  transform: translateY(-3px);
+}
 
 .btn-div button a {
   color: white;
+  font-size: 1.2rem;
+  font-style: italic;
   text-decoration: none;
 }
 
@@ -456,8 +464,8 @@ color: var(--red-color);
   background: linear-gradient(
     to right,
     #ccc 0%,
-    #ffffff 50%,
-    #ccc 100%
+    #ffffffe8 50%,
+    #ffffff 100%
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
