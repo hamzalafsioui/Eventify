@@ -80,6 +80,127 @@ for (i = 0; i < acc.length; i++) {
 
 ---
 
+### blog Scroll vers le haute
+un button qui permet de monte à la haute de la page
+
+```js
+let span=document.querySelector(".up");
+
+window.onscroll=function () {
+    // console.log(this.scrollY);
+    if (this.scrollY>=100) {
+        span.classList.add("show");
+    }else{
+        span.classList.remove("show");
+    }
+};
+span.onclick=function () {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth",
+    })
+```
+
+---
+
+### Event details changements des images
+
+une changement moderne des images automatique
+
+```js
+//  swap images in section event details [images description]
+
+const imagesCollections = document.querySelectorAll(".ed-content-imgs");
+imagesCollections.forEach(collect=>{
+    const images = collect.querySelectorAll("img");
+    // console.log(images);
+    let indexNextImg = 1; // 1 refer to second image after first-child
+
+    function swapImage(){
+        const prevImg = images[0]; // index 0 refer to first image (first child)
+        const nextImg = images[indexNextImg]; 
+        // console.log("prev:",prevImg);
+        // console.log("next:" ,prevImg);
+
+        const tempSrc = prevImg.src;
+        const tempAlt = prevImg.alt;
+
+        prevImg.src = nextImg.src;
+        prevImg.alt = nextImg.alt;
+
+        nextImg.src = tempSrc;
+        nextImg.alt = tempAlt;
+
+        // moving to next image
+        indexNextImg = (indexNextImg == images.length - 1)? 1: indexNextImg + 1;
+    }
+
+    setInterval(swapImage,4000);
+})
+```
+
+---
+
+### home hero section avec une compteur
+
+un compteur dynamique sur un event
+
+```js
+const menu = document.getElementById("menu");
+const navLinks = document.getElementById("nav-links");
+const heroMove= document.getElementById("hero-move");
+const aboutMove=document.getElementById("about-section");
+
+menu.addEventListener('click',function(){
+    menu.classList.toggle('menuActive');
+    navLinks.classList.toggle('active');
+    heroMove.classList.toggle('hero-active');
+    aboutMove.classList.toggle('about-active');
+})
+
+
+let heures = 12;
+let minutes = 30;
+let secondes = 59;
+
+function afficherTemps() {
+  let h = heures < 10 ? "0" + heures : heures;
+  let m = minutes < 10 ? "0" + minutes : minutes;
+  let s = secondes < 10 ? "0" + secondes : secondes;
+
+  document.getElementById("time").textContent = `${h} : ${m} : ${s}`;
+}
+
+function diminuerTemps() {
+  if (heures === 0 && minutes === 0 && secondes === 0) {
+    clearInterval(timer);
+    document.getElementById("time").textContent = "Its time to EVENTLY";
+  } else {
+    if (secondes > 0) {
+      secondes--;
+    } else {
+      secondes = 59;
+      if (minutes > 0) {
+        minutes--;
+      } else {
+        minutes = 59;
+        if (heures > 0) {
+          heures--;
+        }
+      }
+    }
+    afficherTemps(); 
+  }
+}
+
+afficherTemps();
+
+const timer = setInterval(diminuerTemps, 1000);
+ setInterval(swapImage,4000);
+}
+```
+---
+
 ## 📂 Structure du projet
 
 ```
@@ -91,17 +212,23 @@ for (i = 0; i < acc.length; i++) {
 │
 ├── 📁 css/
 │   └── style.css
+│   └── Blog.css
+│   └── event-details.css
+│   └── style_FAQ.css
+│   └── style.css
 │
 ├── 📁 js/
-│   ├── menu.js
-│   └── faq.js
+│   ├── Scroll-To-Top.js
+│   └── script.js
+│   └── script_FAQ.js
+│   └── script-Home.js
 │
 ├── index.html
 ├── event.html
 ├── events-details.html
 ├── blog.html
 ├── FAQ.html
-└── README.md
+└── README_Eventify.md
 ```
 
 ---
