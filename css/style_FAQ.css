@@ -110,6 +110,7 @@ section .para_section {
     margin-bottom: 20px;
 }
 
+
 /* ===============================section faq==================================*/
 .section_faq_question {
     text-align: center;
@@ -198,6 +199,9 @@ section .para_section {
 
 .result_search .panel {
     text-align: start;
+}
+.accordin{
+    cursor: pointer;
 }
 .panel{
     display: none;
@@ -381,6 +385,7 @@ section .para_section {
 
 /* ===============================responsive mobile==================================*/
 @media screen and (max-width: 767px) {
+    /*============hero section=================*/
 
     .hero_section h4 {
         font-size: 20px;
@@ -393,16 +398,17 @@ section .para_section {
     .hero_section h3 {
         font-size: 20px;
     }
+    .hero_section input {
+        width: 70%;
+        font-size: 20px;
+    }
+    /*===================section faq================*/
 
     .cards_faq {
         grid-template-columns: 1fr;
         margin-bottom: 10%;
     }
 
-    .more_question {
-        flex-direction: column;
-        padding: 5%;
-    }
     .cards_faq .card {
         text-align: center;
         background-color: #3C3939;
@@ -410,9 +416,18 @@ section .para_section {
         padding: 7%;
     }
 
+    .more_question {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 5%;
+    }
+    /*===================section search================*/
+    
+
     .container_search input {
         width: 75%;
         padding: 3%;
+        padding-left: 30px;
     }
     .result_search {
         width: 100%;
@@ -428,6 +443,7 @@ section .para_section {
         max-width: 70%;
         text-align: start;
     }
+    /*=============section googlemap================*/
 
     .section_faq_google_map {
         margin-bottom: 300px;
@@ -480,20 +496,39 @@ section .para_section {
         flex-direction: column;
     }
     
+    
 
 
 }
 
 /* ===============================responsive tablette==================================*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero_section h4 {
+        font-size: 60px;
+    }
+
+    .hero_section h2 {
+        font-size: 80px;
+    }
+
+    .hero_section h3 {
+        font-size: 60px;
+    }
+    .hero_section input {
+        width: 80%;
+        font-size: 20px;
+    }
+    /*====================== section search================*/
     .result_search .accordin h3{
         font-size: 13px;
         max-width: 70%;
         text-align: start;
     }
+    /*======================section google map===================*/
     .section_faq_google_map {
         margin-bottom: 300px;
     }
+    /*===================section subscribe==================*/
     .send_subscribe_email h2{
         font-size: 18px;
     }
@@ -507,6 +542,7 @@ section .para_section {
     .container-brand-title h4{
         font-size: 18px;
     }
+    
 
 
 }
